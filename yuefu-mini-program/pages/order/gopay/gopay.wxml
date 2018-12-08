@@ -1,0 +1,20 @@
+<view>
+	<view class="top_div">
+		订单付款
+	</view>
+</view>
+<view>
+	<view class="center_div">
+		¥48.00
+	</view>
+</view>
+
+<view class="box">
+	<view class="item_left">收款方</view>
+	<view class="item_right">府小主</view>
+</view>
+
+
+<view class="address" bindtab="open_pay">
+	<view class="address_new">立即支付</view>
+</view>

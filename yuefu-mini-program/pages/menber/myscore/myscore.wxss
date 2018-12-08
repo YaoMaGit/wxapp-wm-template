@@ -1,0 +1,40 @@
+.box {
+	margin-top: 15rpx;
+}
+
+.list_div {
+	display: flex;
+	background: #FFFFFF;
+	color: #444444;
+	font-size: 28rpx;
+	padding: 10rpx;
+	border-bottom: 1px solid #efefef;
+}
+
+.item_left {
+	flex: 8;
+	
+}
+
+.titel {
+	color: #444444;
+	font-weight:500;
+	font-size: 28rpx;
+	margin-left: 20rpx;
+}
+
+.date {
+	color: #444444;
+	font-size: 21rpx;
+	margin-left: 20rpx;
+}
+
+.item_right {
+	flex: 2;
+	font-size: 28rpx;
+	padding: 15rpx 0rpx;
+	padding-right: 15rpx;
+}
+.item_right>view{
+	margin-left: 40rpx;
+}

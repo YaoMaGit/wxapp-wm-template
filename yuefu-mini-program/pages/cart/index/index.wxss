@@ -1,0 +1,204 @@
+/* pages/cart/index/index.wxss */
+
+.top_div {
+	display: flex;
+	font-size: 22rpx;
+	background: #fff;
+	padding: 15rpx 15rpx;
+	margin-top: 15rpx;
+}
+
+.top_left {
+	flex: 1;
+	margin-right: 10rpx;
+}
+
+.top_left>view {
+	border: 1px solid #ff5052;
+	border-radius: 3px;
+	padding: 0rpx 10rpx;
+	text-align: center;
+	color: #ff5052;
+}
+
+.top_center {
+	flex: 4;
+}
+
+.top_right {
+	flex: 1;
+}
+
+.top_right>image {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25rpx;
+	height: 34rpx;
+}
+
+.list_div {
+	display: flex;
+	background: #fff;
+	margin-top: 20rpx;
+	padding: 10rpx 15rpx;
+}
+
+.radio_div {
+	flex: 1;
+	line-height: 205rpx;
+}
+
+.image_div {
+	flex: 3;
+}
+
+.image_div>view {
+	width: 205rpx;
+	height: 205rpx;
+}
+
+.image_div image {
+	width: 100%;
+	height: 100%;
+}
+
+.right_div {
+	display: flex;
+	flex-direction: column;
+	flex: 6;
+	font-size: 28rpx;
+}
+
+.right_div_top {
+	display: flex;
+	flex: 6;
+}
+
+.del_div {
+	color: #999;
+	font-size: 24rpx;
+	margin-left: 80rpx;
+}
+
+.right_div_bottom {
+	display: flex;
+	flex: 2;
+	/* line-height: 150rpx; */
+}
+
+.right_div_bottom_left {
+	display: flex;
+	flex: 4;
+	color: #ff5052;
+}
+
+.right_div_bottom_right {
+	display: flex;
+	flex: 2;
+
+}
+
+.reduce_div {
+	flex: 1;
+	border: 1px solid #e8e8e8;
+	text-align: center;
+	padding: 5rpx;
+	/* border-radius-top-left: 8rpx;
+  border-radius-right-bottom: 8rpx; */
+}
+
+.num_div {
+	flex: 1;
+	border-top: 1px solid #e8e8e8;
+	text-align: center;
+	padding: 5rpx 10rpx;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.add_div {
+	flex: 1;
+	text-align: center;
+	color: #6497FF;
+	padding: 5rpx;
+	border: 1px solid #e8e8e8;
+}
+
+.row_list_div {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 24rpx;
+	background: #efefef;
+	margin-top: 20rpx;
+}
+
+.row_goods_div{
+	width: 48%;
+	background: #fff;
+	margin-bottom: 15rpx;
+
+}
+.row_goods_div>view{
+	padding: 15rpx 15rpx;
+}
+.goods_img{
+	width: 100%;
+  height: 310rpx;
+}
+.price_carimg{
+	display: flex;
+}
+
+.price_div{
+	flex: 4;
+}
+.carimg_div{
+	flex: 1;
+	
+	display: flex;
+}
+.carimg_div>view{
+	border-radius: 50%;
+	padding: 4rpx;
+	background: #6497FF;
+}
+.car_img{
+	width: 32rpx;
+	height: 32rpx;
+}
+.price_div_text1{
+	color: #FF5052;
+}
+.price_div_text2{
+	color:#B7B7B7;
+	font-size: 20rpx;
+}
+
+.fixd_div{
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+	font-size: 26rpx;
+	background: #fff;
+	width: 100%;
+	
+}
+.fixed_radio_div{
+	flex: 1;
+	padding: 20rpx;
+}
+.fixed_price_div{
+	flex: 3;
+	padding: 20rpx;
+}
+.fixed_pay_div{
+	flex: 1;
+	padding: 20rpx;
+	background:#6497FF ;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 34rpx;
+}

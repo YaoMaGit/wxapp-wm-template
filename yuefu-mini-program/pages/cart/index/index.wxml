@@ -1,0 +1,148 @@
+<view class='top_div'>
+	<view class="top_left">
+		<view>
+			免配送费
+		</view>
+
+	</view>
+
+	<view class="top_center">
+		再购59.1元立享&#91满100元免配送费]
+
+	</view>
+	<view class="top_right">
+		<text>查看活动</text>
+		<image src='../../../assets/image/常见菜品@2x.png'></image>
+	</view>
+</view>
+
+
+<view class='list_div' wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
+	<view class='radio_div'>
+		<radio value="r1" color="#6497FF" />
+	</view>
+	<view class='image_div'>
+		<view>
+			<image src='../../../assets/image/invite.png'></image>
+		</view>
+	</view>
+	<view class='right_div'>
+		<view class='right_div_top'>
+			<view>月子催奶-鲫鱼萝卜丝汤
+			</view>
+			<view class='del_div'>删除</view>
+		</view>
+		<view class='right_div_bottom'>
+
+			<view class='right_div_bottom_left'>
+				¥36.00
+			</view>
+
+			<view class='right_div_bottom_right'>
+				<view class="reduce_div">
+					-
+				</view>
+				<view class="num_div">
+					1
+				</view>
+				<view class="add_div">
+					+
+				</view>
+			</view>
+
+		</view>
+	</view>
+</view>
+
+
+<view class="row_list_div">
+	<view class="row_goods_div">
+		<view>
+			<image class="goods_img" src='../../../assets/image/invite.png'></image>
+		</view>
+		<view>
+			月子催奶-鲫鱼萝卜丝汤
+		</view>
+		<view class="price_carimg">
+			<view class="price_div">
+				<text class="price_div_text1">¥36.00</text><text class="price_div_text2">/份</text>
+			</view>
+			<view class="carimg_div">
+				<view>
+					<image class="car_img" src="../../../assets/image/购物车2323@2x.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="row_goods_div">
+		<view>
+			<image class="goods_img" src='../../../assets/image/invite.png'></image>
+		</view>
+		<view>
+			月子催奶-鲫鱼萝卜丝汤
+		</view>
+		<view class="price_carimg">
+			<view class="price_div">
+				<text class="price_div_text1">¥36.00</text><text class="price_div_text2">/份</text>
+			</view>
+			<view class="carimg_div">
+				<view>
+					<image class="car_img" src="../../../assets/image/购物车2323@2x.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="row_goods_div">
+		<view>
+			<image class="goods_img" src='../../../assets/image/invite.png'></image>
+		</view>
+		<view>
+			月子催奶-鲫鱼萝卜丝汤
+		</view>
+		<view class="price_carimg">
+			<view class="price_div">
+				<text class="price_div_text1">¥36.00</text><text class="price_div_text2">/份</text>
+			</view>
+			<view class="carimg_div">
+				<view>
+					<image class="car_img" src="../../../assets/image/购物车2323@2x.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="row_goods_div">
+		<view>
+			<image class="goods_img" src='../../../assets/image/invite.png'></image>
+		</view>
+		<view>
+			月子催奶-鲫鱼萝卜丝汤
+		</view>
+		<view class="price_carimg">
+			<view class="price_div">
+				<text class="price_div_text1">¥36.00</text><text class="price_div_text2">/份</text>
+			</view>
+			<view class="carimg_div">
+				<view>
+					<image class="car_img" src="../../../assets/image/购物车2323@2x.png"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<view class="fixd_div">
+	<view class="fixed_radio_div">
+		<lable>
+			<radio value="r1" color="#6497FF" />全选</lable>
+	</view>
+	<view class="fixed_price_div">
+		<view>
+			<text style="color:#999999;font-size: 24rpx;">合计:</text>
+			<text style="color:#FF5052;font-size: 34rpx;">¥36.00</text>
+			<text style="color:#999999;font-size: 26rpx;">（免运费）</text>
+		</view>
+	</view>
+	<view class="fixed_pay_div">去结算</view>
+</view>

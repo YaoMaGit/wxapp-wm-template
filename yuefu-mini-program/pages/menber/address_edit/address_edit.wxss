@@ -1,0 +1,47 @@
+.item_div {
+	display: flex;
+	border-bottom: 1px solid #D8D8D8;
+	font-size: 24rpx;
+	background: #ffffff;
+	padding: 15rpx;
+	padding-left: 25rpx;
+}
+
+.item_div>.img_div {
+	flex: 1;
+}
+
+.img_div>image {
+	width: 45rpx;
+	height: 45rpx;
+	margin-top: 5rpx;
+	margin-right: 20rpx;
+}
+
+.item_div>.input_div {
+	flex: 15;
+}
+
+.moren_div {
+	margin-top: 20rpx;
+}
+
+.xxx {
+	padding: 15rpx;
+}
+
+.address {
+	width: 80%;
+	margin: 40px auto;
+}
+
+.address_new {
+	background: #5B91FE;
+	box-shadow: 0 1rpx 5rpx 1rpx #5B91FE;
+	border-radius: 100rpx;
+	text-align: center;
+	padding: 15rpx;
+	color: #fff;
+	font-size: 24rpx;
+}
+

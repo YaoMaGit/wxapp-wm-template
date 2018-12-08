@@ -1,0 +1,53 @@
+<view>
+	<view class="item_div">
+		<view class="img_div">
+			<image src="../../../assets/image/gps_1.png"></image>
+		</view>
+		<view class="input_div">
+			<input bindinput="bindKeyInput" placeholder="张三" />
+		</view>
+	</view>
+	<view class="item_div">
+		<view class="img_div">
+			<image src="../../../assets/image/gps_1.png"></image>
+		</view>
+		<view class="input_div">
+			<input bindinput="bindKeyInput" placeholder="15100011122" />
+		</view>
+	</view>
+	<view class="item_div">
+		<view class="img_div">
+			<image src="../../../assets/image/gps_1.png"></image>
+		</view>
+		<view class="input_div">
+			<input bindinput="bindKeyInput" placeholder="江苏省 南京市 鼓楼区" />
+		</view>
+	</view>
+	<view class="item_div">
+		<view class="img_div">
+			<image src="../../../assets/image/gps_1.png"></image>
+		</view>
+		<view class="input_div">
+			<input bindinput="bindKeyInput" placeholder="鼓楼区18号" />
+		</view>
+	</view>
+</view>
+
+<view class="moren_div">
+
+	<view class="item_div">
+		<view class="img_div">
+		</view>
+		<view class="input_div xxx">
+			设为默认地址
+		</view>
+		<view class="img_div">
+			<switch color="#39E0C8" checked bindchange="switch1Change" />
+		</view>
+	</view>
+
+</view>
+
+<view class="address">
+	<view class="address_new">保存</view>
+</view>

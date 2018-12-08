@@ -1,0 +1,83 @@
+<view class='tab_div'>
+  <view wx:for="{{tabdata}}" id="{{index}}" bindtap="tab_clk" wx:for-item="item" wx:key="index" class="tabs" wx:for-index="index">
+    <text class="{{active==index ? 'active_tab' : 'no_active'}}">{{item}}</text>
+  </view>
+</view>
+<view>
+
+
+  <view class='list_box' wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
+    <view class='list_top'>
+      <view class='list_top_left'>
+        <text>2019-09-02  11:44</text>
+      </view>
+      <view class='list_top_right'>
+        <text>等待支付</text>
+      </view>
+    </view>
+
+
+    <view class='list_center'>
+      <view class='list_center_left'>
+        <view>
+          <image src='../../../assets/image/invite.png'></image>
+        </view>
+      </view>
+      <view class='list_center_center'>
+        <view class='title_div'>
+          <text>黑糖暖宫姜枣茶</text>
+        </view>
+        <view class='dingdan_div'>
+          <text>订单号：52346748694</text>
+        </view>
+        <view class='num_div'>
+          <text>共5件商品</text>
+        </view>
+      </view>
+
+      <view class='list_center_right'>
+        <text class='count_div'>合计：</text>
+        <text class="pirce_div">￥78.00</text>
+      </view>
+    </view>
+
+    <view class='list_bottom'>
+      <view class='list_bottom_left'>
+        <text>更多</text>
+      </view>
+      <view class='list_bottom_right'>
+        <view class='cancle_div'>
+          <text>取消订单</text>
+        </view>
+        <view class='pay_div' bindtap="open_pay">
+          <text>去支付</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-input">
+    <image src='../../../assets/image/invite.png'></image>
+  </view>
+  <view class="modal-footer">
+    <text>确认收货成功</text>
+  </view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-input">
+    <image src='../../../assets/image/组8@3x@2x.png'></image>
+  </view>
+  <view class="modal-footer">
+    <text>感谢您的评价</text>
+  </view>
+</view>

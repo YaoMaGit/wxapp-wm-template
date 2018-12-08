@@ -1,0 +1,75 @@
+<view class="box">
+	<view class="list_div">
+		<view class="item_left">
+			<view class="titel">姓名：</view>
+		</view>
+
+		<view class="item_right">
+			<view>
+				<input bindinput="bindKeyInput" placeholder="请输入您的姓名" />
+			</view>
+		</view>
+	</view>
+	<view class="list_div">
+		<view class="item_left">
+			<view class="titel">电话：</view>
+		</view>
+
+		<view class="item_right">
+			<view>
+				<input bindinput="bindKeyInput" placeholder="请输入您的电话" />
+			</view>
+		</view>
+	</view>
+
+	<view class="list_div">
+		<view class="item_left">
+			<view class="titel">身份证：</view>
+		</view>
+
+		<view class="item_right">
+			<view class="addcard">
+				上传身份证正面
+			</view>
+		</view>
+	</view>
+
+	<view class="list_div">
+		<view class="item_left">
+			<view class="titel"></view>
+		</view>
+
+		<view class="item_right">
+			<view class="addcard">
+				上传身份证正面
+			</view>
+		</view>
+	</view>
+		<view class="list_div">
+			<view class="item_left">
+				<view class="titel"></view>
+			</view>
+	
+			<view class="no_flex">
+				<view>
+					<checkbox-group class="group" bindchange="checkboxChange">
+					  <view class="label-1">
+						<label>
+						  <checkbox hidden value="1" checked=""></checkbox>
+						  <view class="label-1__icon">
+							<view class="label-1__icon-checked" style="opacity:0"></view>
+						  </view>
+						  <text class="label-1__text">《平台分销协议》</text>
+						</label>
+					  </view>
+					</checkbox-group>
+				</view>
+			</view>
+		</view>
+</view>
+
+
+
+<view class="address">
+	<view class="address_new">提交</view>
+</view>

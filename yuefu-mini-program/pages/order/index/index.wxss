@@ -1,0 +1,190 @@
+.tab_div {
+  display: flex;
+  background: #fff;
+  padding: 10rpx 0;
+}
+
+.tab_div>.tabs {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 5rpx;
+}
+
+.active_tab {
+  border-bottom: 4rpx solid #5991fe;
+  font-size: 28rpx;
+  color: #5991fe;
+  padding-bottom: 6rpx;
+}
+
+.no_active {
+  font-size: 28rpx;
+  color: #555;
+  padding-bottom: 3rpx;
+}
+
+.list_box {
+  padding: 0px 25rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.list_top {
+  clear: both;
+  font-size: 22rpx;
+  padding: 10rpx 0;
+}
+
+.list_top_left {
+  float: left;
+  /* align-self: center; */
+  color: #333;
+}
+
+.list_top_right {
+  /* align-self: flex-end; */
+  float: right;
+  color: #fe5d33;
+}
+
+.list_center {
+  display: flex;
+  clear: both;
+  padding: 20rpx 0;
+  margin-top: 33rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.list_center>view {
+  /* text-align: center; */
+}
+
+.list_center_left {
+  flex: 2;
+}
+
+.list_center_left>view {
+  width: 140rpx;
+  height: 140rpx;
+  /* background: greenyellow; */
+  object-fit: cover;
+}
+
+.list_center_left>view>image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.list_center_center {
+  flex: 3;
+  font-size: 22rpx;
+}
+
+.title_div {
+  font-size: 28rpx;
+  color: #555;
+}
+
+.dingdan_div {
+  color: #555;
+}
+
+.num_div {
+  padding-top: 15rpx;
+  font-size: 24rpx;
+  color: #555;
+}
+
+.list_center_right {
+  flex: 3;
+  text-align: center;
+}
+
+.count_div {
+  color: #555;
+  font-size: 24rpx;
+}
+
+.pirce_div {
+  color: #ff5151;
+  font-size: 32rpx;
+}
+
+.list_bottom {
+  display: flex;
+  padding: 22rpx 0;
+}
+
+.list_bottom_left {
+  flex: 3;
+  padding: 10rpx 0rpx;
+  font-size: 21rpx;
+  color: #555;
+}
+
+.list_bottom_right {
+  display: flex;
+  flex: 5;
+  font-size: 26rpx;
+  justify-content: flex-end;
+}
+
+.cancle_div {
+  padding: 10rpx 35rpx;
+  border-radius: 5px;
+  margin-right: 25rpx;
+  color: #333;
+  border: 1px solid rgba(229, 229, 229, 1);
+}
+
+.pay_div {
+  padding: 10rpx 45rpx;
+  border-radius: 5px;
+  background: #5991fe;
+  color: #fff;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 514rpx;
+  height: 311rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 12rpx;
+}
+
+.modal-input {
+  /* margin: auto; */
+  text-align: center;
+  margin: 30rpx 0;
+}
+
+.modal-input>image {
+  width: 152rpx;
+  height: 157rpx;
+}
+
+.modal-footer {
+  font-size: 28rpx;
+  color: #444;
+  text-align: center;
+}

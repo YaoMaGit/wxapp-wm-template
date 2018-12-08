@@ -1,0 +1,23 @@
+/* pages/menber/invite/invite.wxss */
+view{
+  text-align: center;
+  font-size: 30rpx;
+}
+image{
+  width: 144rpx;
+  height: 144rpx;
+}
+.padding_css{
+  margin-top:120rpx;
+
+}
+.btn_div{
+  width: 613rpx;
+  height: 68rpx;
+  background: #3889FF;
+  color:#fff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 68rpx;
+  margin: auto;
+}

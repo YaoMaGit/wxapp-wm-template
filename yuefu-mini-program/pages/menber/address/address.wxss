@@ -1,0 +1,74 @@
+.address_li{
+				width: 100%;
+        margin-top: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+        background: #fff;
+        padding:15rpx; 
+			}
+			.address_name{
+				width: 15%;
+				float: left;
+				text-align: center;
+			}
+			.address_name span{
+				padding: 8px 10px;
+				background: #D8D8D8;
+				border-radius: 100px;
+				text-align: center;
+				line-height: 30px;
+				color: #333333;
+			}
+			.address_cont{
+				width: 70%;
+				float: left;
+				padding-right:3px;
+			}
+			.address_a{
+				font-size: 28rpx;
+			}
+			.address_phone{
+				color: #999;
+				font-size: 12px;
+			}
+			.address_title{
+				font-size: 22rpx;
+			}
+			.address_title span{
+				padding:1px 5px;
+				margin-right: 2px;
+				font-size: 12px;
+				color: #ff6544;
+				background: #ffcdcd;
+				border-radius: 3px;
+			}
+			.address_edit{
+				width: 15%;
+        padding: 10px;
+				padding-left: 3px;
+				float: left;
+				color: #333333;
+        font-size: 22rpx;
+				border-left: 1px solid #efefef;
+				text-align: center;
+			}
+      .address_edit span{
+        border-radius: 20px;
+        background: #D8D8D8;
+        padding: 3px 12px;
+        font-size: 12px;
+      }
+      .address{
+				width: 80%;
+				margin: 40px auto;
+			}
+			.address_new{
+				background: #5B91FE;
+				box-shadow:0 1px 5px 1px #5B91FE;
+				border-radius: 100px;
+				text-align: center;
+				padding: 10px ;
+				color: #fff;
+				font-size: 14px;
+			}

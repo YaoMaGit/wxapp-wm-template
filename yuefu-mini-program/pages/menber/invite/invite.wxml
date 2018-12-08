@@ -1,0 +1,19 @@
+<view class='padding_css'>
+  <image  src="../../../assets/image/invite.png"></image>
+</view>
+<view >
+  <text>推广奖励</text>
+</view>
+<view  class='padding_css'>
+<image src="../../../assets/image/收文流程@2x.png"></image>
+
+</view>
+<view>
+<text>推广流程</text>
+</view>
+
+<view  class='padding_css'>
+<view class='btn_div'>
+<text>立即申请</text>
+</view>
+</view>

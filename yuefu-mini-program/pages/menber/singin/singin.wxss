@@ -1,0 +1,43 @@
+.box{
+	margin-top: 15rpx;
+	}
+.list_div {
+	display: flex;
+	background: #FFFFFF;
+	color: #444444;
+	font-size: 28rpx;
+	padding: 10rpx;
+	border-bottom: 1px solid #efefef;
+}
+
+.item_left {
+	flex: 1;
+	padding-right: 5rpx;
+}
+
+.item_left>image {
+	width: 73rpx;
+	height: 73rpx;
+	border-radius: 50%;
+}
+
+.item_right {
+	flex: 3;
+	padding: 15rpx 0rpx;
+	padding-right: 15rpx;
+}
+
+.item_center {
+	flex: 4;
+	padding: 15rpx 0rpx;
+
+}
+.item_right_right{
+	flex: 1;
+}
+.item_right_right>image{
+	width: 40rpx;
+	height: 40rpx;
+	margin-top: 18rpx;
+	}
+	

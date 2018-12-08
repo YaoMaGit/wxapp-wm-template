@@ -1,0 +1,13 @@
+<view class="box">
+	<view class="list_div" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
+		<view class="item_left">
+			<image src="../../../assets/image/become_fenxiao.png"></image>
+		</view>
+		<view class="item_center">
+			向日葵的微笑
+		</view>
+		<view class="item_right">
+			2018-09-20 12:24:30加入
+		</view>
+	</view>
+</view>

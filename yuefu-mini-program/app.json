@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/orderMeal/index/index",
+    "pages/order/index/index",
+    "pages/cart/index/index",
+    "pages/menber/index/index",
+    "pages/menber/invite/invite",
+    "pages/menber/address_edit/address_edit",
+    "pages/menber/teamlist/teamlist",
+    "pages/menber/singin/singin",
+    "pages/menber/becamefx/becamefx",
+    "pages/order/gopay/gopay",
+    "pages/menber/oftengoods/oftengoods",
+    "pages/menber/myscore/myscore",
+		"pages/menber/address/address",
+    "pages/order/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#161D3A",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#161D3A",
+    "borderStyle": "#6D6D6D",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabBar/icon-home.png",
+        "selectedIconPath": "assets/tabBar/icon-home-active.png"
+      },
+      {
+        "pagePath": "pages/orderMeal/index/index",
+        "text": "一键订餐",
+        "iconPath": "assets/tabBar/icon-orderMeal.png",
+        "selectedIconPath": "assets/tabBar/icon-orderMeal-active.png"
+      },
+      {
+        "pagePath": "pages/order/index/index",
+        "text": "订单",
+        "iconPath": "assets/tabBar/icon-order.png",
+        "selectedIconPath": "assets/tabBar/icon-order-active.png"
+      },
+      {
+        "pagePath": "pages/cart/index/index",
+        "text": "购物车",
+        "iconPath": "assets/tabBar/icon-cart.png",
+        "selectedIconPath": "assets/tabBar/icon-cart-active.png"
+      },
+      {
+        "pagePath": "pages/menber/index/index",
+        "text": "我的",
+        "iconPath": "assets/tabBar/icon-menber.png",
+        "selectedIconPath": "assets/tabBar/icon-menber-active.png"
+      }
+    ]
+  }
+}

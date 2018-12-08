@@ -1,0 +1,34 @@
+.box{
+	margin-top: 15rpx;
+	}
+.list_div {
+	display: flex;
+	background: #FFFFFF;
+	color: #444444;
+	font-size: 28rpx;
+	padding: 10rpx;
+	border-bottom: 1px solid #efefef;
+}
+
+.item_left {
+	flex: 1;
+	padding-right: 5rpx;
+}
+
+.item_left>image {
+	width: 73rpx;
+	height: 73rpx;
+	border-radius: 50%;
+}
+
+.item_right {
+	flex: 5;
+	padding: 15rpx 0rpx;
+	padding-right: 15rpx;
+}
+
+.item_center {
+	flex: 4;
+	padding: 15rpx 0rpx;
+
+}
