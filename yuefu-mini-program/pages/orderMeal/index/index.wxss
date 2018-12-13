@@ -1,1 +1,367 @@
-/* pages/dingcan/index/index.wxss */
+.search-box {
+  display: flex;
+  height: 110rpx;
+  background: #161D3A;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.search-box .addr {
+  width: 172rpx;
+  display: flex;
+  color: #FDFDFD;
+  font-size: 30rpx;
+  align-items: center;
+}
+.search-box .addr image {
+  width: 22rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+.search-box .input-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 62rpx;
+  background: #fff;
+  border-radius: 30rpx;
+  font-size: 22rpx;
+  padding: 0 30rpx;
+}
+.search-box .input-box image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+}
+.search-box .input-box input {
+  flex: 1;
+}
+
+.detail-box {
+  display: flex;
+  height: calc(100vh - 110rpx);
+}
+.isShowSett {
+  height: calc(100vh - 204rpx);
+}
+.nav-box {
+  width: 150rpx;
+  background: #F4F8FB;
+  justify-content: center;
+  overflow-y: auto;
+}
+.nav-box .item {
+  width: 150rpx;
+  padding: 0 31rpx;
+  height: 96rpx;
+  font-size: 22rpx;
+  color: #666666;
+  display: flex;
+  align-items: center;
+}
+.nav-box .item image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.nav-box .item view {
+  flex: 1;
+}
+.nav-box .item.active {
+  background: #FFFFFF;
+}
+.nav-box .item:first-child {
+  color: #303030;
+  font-weight: bold;
+}
+.list-box {
+  flex: 1;
+  padding: 12rpx 20rpx 20rpx 28rpx;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.banner-box {
+  height: 204rpx;
+  position: relative;
+}
+.banner-box .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 10rpx);
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 10rpx;
+  background: rgba(0,0,0,0.3);
+  color: #FFFFFF;
+  font-size: 22rpx;
+}
+.border_div{
+  width: 30rpx;
+  border-top: 
+}
+.detailimg_div{
+  width: 332rpx;
+  height: 369rpx;
+  margin: auto;
+}
+.price_div{
+  padding-left: 20rpx;
+}
+.detailimg_div{
+ object-fit: cover;
+}
+.bottom_detail{
+  display: flex;
+  font-size: 22rpx;
+  background: #F7F7F7;
+  padding: 10rpx 0;
+  padding-top: 15rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+.left_detail{
+  padding-left: 20rpx;
+  flex: 3
+  
+}
+.posi_div{
+  position: relative
+}
+.close_posi_img{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35rpx;
+  height: 35rpx;
+}
+.color_red_box{
+  color: #FF5151;
+  padding-right: 15rpx;
+}
+.content_detail{
+  text-align: center;
+  font-size: 21rpx;
+  color: #777777;
+  margin-bottom: 40rpx;
+  line-height: 35rpx;
+  padding: 0 30rpx;
+}
+.color_red{
+  font-size: 24rpx;
+}
+.xxx{
+  text-decoration:line-through;
+}
+.right_detail{
+  flex: 2
+}
+.right_detail>view{
+  width: 207rpx;
+  height: 53rpx;
+  background: #5991FE;
+  color: #fff;
+  border-radius: 22rpx;
+  text-align: center;
+  line-height: 53rpx;
+}
+.item-box .title {
+  font-size: 26rpx;
+  color: #333333;
+  height: 92rpx;
+  line-height: 92rpx;
+}
+
+.item-box .food {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80rpx;
+}
+.item-box .food .left image {
+  width: 136rpx;
+  height: 146rpx;
+}
+.item-box .food .right {
+  color: #999999;
+  font-size: 20rpx;
+  padding-left: 32rpx;
+}
+.item-box .food .right>view {
+  line-height: 1;
+}
+.item-box .food .right .name {
+  color: #333333;
+  font-size: 30rpx;
+}
+.item-box .food .right .msg {
+  margin: 20rpx 0;
+}
+.item-box .food .right .price {
+  margin-top: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.item-box .food .right .price-1 {
+  color: #FF5151;
+  font-size: 36rpx;
+  margin-right: 18rpx;
+}
+.item-box .food .right .price-1 text {
+  font-size: 18rpx;
+}
+.item-box .food .right .price-2 {
+  font-size: 20rpx;
+  color: #ABABAB;
+}
+.item-box .food .btn-box image {
+  width: 44rpx;
+  height: 44rpx;
+}
+.item-box .food .btn-box view {
+  width: 98rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  color: #fff;
+  background: #5991FE;
+  font-size: 22rpx;
+  text-align: center;
+  border-radius: 22rpx;
+}
+
+.popup-box {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-box .info {
+  width: 592rpx;
+  background: #fff;
+  border-radius: 16rpx;
+}
+.popup-box .title {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #333333;
+  font-size: 28rpx;
+  text-align: center;
+}
+.popup-box .list-box {
+
+}
+.popup-box .list-box .top {
+  color: #333333;
+  font-size: 22rpx;
+}
+.popup-box .list-box .list {
+}
+.popup-box .list-box .list::after{
+  display: block;
+  height: 0;
+  clear: both;
+  content: ''
+}
+.popup-box .list-box .list>view {
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  height: 52rpx;
+  line-height: 52rpx;
+  float: left;
+  color: #333333;
+  font-size: 22rpx;
+  margin: 0 18rpx 16rpx 0;
+  text-align: center;
+}
+.popup-box .list-box .list>view:nth-of-type(odd) {
+  width: 178rpx;
+}
+.popup-box .list-box .list>view:nth-of-type(even) {
+  width: 140rpx;
+}
+.popup-box .list-box .list>view:nth-child(3n) {
+  margin-right: 0;
+}
+.popup-box .bottom {
+  height: 100rpx;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+.popup-box .bottom .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.popup-box .bottom .left>view:nth-child(1) {
+  color: #FF5151;
+  font-size: 48rpx;
+  margin-right: 14rpx;
+}
+.popup-box .bottom .left>view:nth-child(1) text {
+  font-size: 30rpx;
+}
+.popup-box .bottom .left>view:nth-child(2) {
+  font-size: 19rpx;
+  color: #333333;
+}
+.popup-box .bottom .right {
+  width: 208rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  background: #5991FE;
+  color: #fff;
+  font-size: 22rpx;
+  border-radius: 26rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.popup-box .bottom .right>text {
+  font-size: 42rpx;
+  margin-top: -8rpx;
+}
+
+.sett-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 94rpx;
+  background: #161D3A;
+  display: flex;
+  align-items: center;
+}
+.sett-box>view {
+  font-size: 30rpx;
+  color: #fff;
+}
+.sett-box>view:nth-child(1) {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sett-box>view:nth-child(2) {
+  background: #5f90ff;
+  width: 320rpx;
+  height: 100%;
+  line-height: 94rpx;
+  text-align: center;
+}
+.sett-box .price image {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 20rpx;
+  margin-top: -2rpx;
+}

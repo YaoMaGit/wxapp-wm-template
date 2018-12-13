@@ -1,0 +1,68 @@
+<view class="container">
+  <view class="tabs">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      class="{{currentTab === index ? 'active' : ''}}"
+      bindtap="swichTab"
+    >
+      {{item}}
+    </view>
+  </view>
+
+  <view class="list" wx:if="{{currentTab === 0}}">
+    <navigator hover-class="none" url="../couponsDetail/couponsDetail">
+      <view
+        wx:for="{{list}}"
+        wx:key="{{index}}"
+        data-index="{{index}}"
+        class="item {{item.type === 0 ? '' : 'tongyong'}}"
+      >
+        <image wx:if="{{item.type === 0}}" src="../../../assets/icon/bg-1.png"></image>
+        <image wx:else src="../../../assets/icon/bg-3.png"></image>
+        <view class="box">
+          <view class="left">
+            <view>￥ <text>10</text> </view>
+            <view wx:if="{{item.type === 0}}">满80可用</view>
+            <view wx:else>不限满额</view>
+          </view>
+          <view class="right">
+            <view>{{item.name}}</view>
+            <view>{{item.typeText}}</view>
+            <view>有效期至：2019年12月31日</view>
+            <view>
+              <navigator hover-class="none" url="../../orderMeal/selectCoupon/selectCoupon">查看可用商品 ></navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="list gifts-list"  wx:if="{{currentTab === 1}}">
+    <view
+      wx:for="{{giftList}}"
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      class="item {{item.status === 0 ? '' : 'overdue'}}"
+    >
+      <image src="../../../assets/icon/bg-4.png"></image>
+      <view class="box">
+        <view class="left">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="right">
+          <view>红糖姜茶+黄瓜片</view>
+          <view>分享券</view>
+          <view>有效期至：2019年12月31日</view>
+          <view>立即领取 ></view>
+          <view class="overdue-pic" wx:if="{{item.status === 1 || item.status === 2}}">
+            <image wx:if="{{item.status === 1}}" src="../../../assets/icon/icon-guoqi.png"></image>
+            <image wx:if="{{item.status === 2}}" src="../../../assets/icon/icon-yiyong.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

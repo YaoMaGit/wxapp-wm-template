@@ -1,0 +1,27 @@
+<view>
+  <view class="title">我的账户</view>
+  <view class='myprice'>
+    <view class='img_div'>
+      <image src='../../../assets/icon/price.png'></image>余额</view>
+    <view class='span_div'>￥0.00</view>
+  </view>
+
+  <view class="title">充值金额</view>
+  <view class='myprice pading'>
+    <view class='img_div'>
+      <input></input>
+    </view>
+    <view class='span_div'></view>
+  </view>
+</view>
+
+
+<view class="address" bindtap='open_edit'>
+  <view class="address_new">立即充值</view>
+</view>
+
+  <view class="title">充值说明</view>
+
+  <view class="sub_title">
+  <view>充值即送小主会员，充值的钱可以在商城消费，但不可提 现，开通会员即送免费喝茶劵哦</view>
+  </view>

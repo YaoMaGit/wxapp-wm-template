@@ -1,0 +1,51 @@
+/* pages/menber/getpay/getpay.wxss */
+.title{
+  font-size: 28rpx;
+  margin-left: 15rpx;
+  border-left: 2rpx solid #5B91FE;
+  padding-left: 15rpx;
+  margin-top: 20rpx;
+}
+.myprice{
+  display: flex;
+  border: 1rpx solid #bbbb;
+  margin: 15rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  padding: 15rpx;
+  font-size: 36rpx;
+}
+.pading{
+  padding:10px 20rpx;
+}
+.img_div{
+  flex: 4
+}
+.img_div>image{
+  width: 70rpx;
+  height: 70rpx;
+  vertical-align: middle;
+  margin-right: 15rpx;
+}
+.span_div{
+flex: 1;
+margin-top: 15rpx;
+}
+
+.sub_title{
+  color: #444444;
+  font-size:24rpx;
+  padding: 15rpx;
+}
+      .address{
+				width: 80%;
+				margin: 40px auto;
+			}
+			.address_new{
+				background: #5B91FE;
+				border-radius: 100px;
+				text-align: center;
+				padding: 10px ;
+				color: #fff;
+				font-size: 14px;
+			}

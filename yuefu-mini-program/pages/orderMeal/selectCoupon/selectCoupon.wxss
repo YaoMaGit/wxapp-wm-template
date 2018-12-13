@@ -1,0 +1,74 @@
+.tips-box {
+  color: #333333;
+  font-size: 22rpx;
+  padding: 16rpx 26rpx;
+  line-height: 36rpx;
+  font-weight: 500;
+  background: #fff;
+}
+.tips-box>view:nth-child(2) {
+  color: #999999;
+  font-size: 20rpx;
+}
+
+.list-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 22rpx 20rpx;
+}
+.list-box .item {
+  width: 184rpx;
+  padding: 16rpx 20rpx;
+  background: #fff;
+  margin-right: 18rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.list-box .item:nth-child(3n) {
+  margin-right: 0;
+}
+.list-box .item .pic {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto;
+}
+.list-box .item .name {
+  margin-top: 20rpx;
+  color: #444444;
+  font-size: 22rpx;
+  line-height: 30rpx;
+}
+.list-box .item .tab {
+  width: 50rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  border: 1px solid #FF5151;
+  border-radius: 6rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: #FF5151;
+  margin: 6rpx 0;
+}
+.list-box .item .yuanjia {
+  line-height: 1;
+  margin: 10rpx 0 12rpx 0;
+  font-size: 22rpx;
+  color: #999999;
+  text-decoration: line-through;
+}
+.list-box .item .xianjia {
+  line-height: 1;
+  color: #FF5151;
+  font-size: 28rpx;
+}
+.list-box .item .xianjia text {
+  font-size: 20rpx;
+}
+.list-box .item .add-icon {
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  bottom: 16rpx;
+  right: 20rpx;
+}

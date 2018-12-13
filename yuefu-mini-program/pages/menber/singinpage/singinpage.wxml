@@ -1,0 +1,82 @@
+<view class='box back_div'>
+	<view>
+		<image class='sin_img' src="../../../assets/icon/singinpage.png"></image>
+	</view>
+	<view class="spandiv">签到成功，今日领取10积分</view>
+</view>
+
+
+<view class="top_div">
+	<view>
+		<image src="../../../assets/icon/left_img.png"></image>
+		<text>2018年10月</text>
+		<image src="../../../assets/icon/right_img.png"></image>
+	</view>
+</view>
+
+<view class="weekdiv">
+	<view>日</view>
+	<view>一</view>
+	<view>二</view>
+	<view>三</view>
+	<view>四</view>
+	<view>五</view>
+	<view>六</view>
+</view>
+
+<view class="daydiv">
+	<view>1</view>
+	<view>
+		<view class="posi_div">
+			<text>2</text>
+			<image class="true_img" src="../../../assets/icon/icon-tick1.png"></image>
+		</view>
+	</view>
+	<view>
+		<view class="active_div">今天</view>
+	</view>
+	<view>4</view>
+	<view>5</view>
+	<view>6</view>
+	<view>7</view>
+
+</view>
+<view class="daydiv">
+	<view>8</view>
+	<view>9</view>
+	<view>10</view>
+	<view>11</view>
+	<view>12</view>
+	<view>13</view>
+	<view>14</view>
+
+</view>
+<view class="daydiv">
+	<view>15</view>
+	<view>16</view>
+	<view>17</view>
+	<view>18</view>
+	<view>19</view>
+	<view>20</view>
+	<view>21</view>
+
+</view>
+<view class="daydiv">
+	<view>22</view>
+	<view>23</view>
+	<view>24</view>
+	<view>25</view>
+	<view>26</view>
+	<view>27</view>
+	<view>28</view>
+
+</view>
+<view class="daydiv" >
+	<view>29</view>
+	<view>30</view>
+	<view></view>
+	<view></view>	
+  <view></view>
+	<view></view>
+  	<view></view>
+</view>

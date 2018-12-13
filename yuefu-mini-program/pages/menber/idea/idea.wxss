@@ -1,0 +1,51 @@
+.box {
+  margin: 0 26rpx;
+}
+.box .title {
+  color: #333333;
+  font-size: 28rpx;
+  line-height: 1;
+  margin: 26rpx 0 14rpx 0;
+}
+.box textarea {
+  width: calc(100% - 64rpx);
+  height: 222rpx;
+  background: #fff;
+  padding: 38rpx 32rpx;
+  border-radius: 10rpx;
+  font-size: 22rpx;
+}
+
+.upload-box {
+  height: 174rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 32rpx 38rpx;
+}
+.upload-box>view:nth-child(1) {
+  color: #999999;
+  font-size: 22rpx;
+  line-height: 1;
+  margin-bottom: 32rpx;
+}
+.upload-box>view:nth-child(2) {
+  width: 124rpx;
+  height: 116rpx;
+  border: 1px solid #BFBFBF;
+  box-sizing: border-box;
+  color: #BFBFBF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 614rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  border-radius: 34rpx;
+  background: #5B91FE;
+  margin: 180rpx auto 0;
+}

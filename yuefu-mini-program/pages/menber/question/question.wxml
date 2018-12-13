@@ -1,0 +1,11 @@
+
+<view class="list">
+	<navigator class="box" hover-class="none" url="../issue/issue" >
+		<view class="left_div">购买类</view>
+		<view   class="right_div" >
+			
+			<image src="../../../assets/icon/icon-arrow-down.png"></image>
+			
+		</view>
+	</navigator>
+</view>

@@ -1,2 +1,135 @@
-<!--pages/dingcan/index/index.wxml-->
-<text>pages/dingcan/index/index.wxml</text>
+<view class="container">
+  <view class="search-box">
+    <view class="addr">
+      <image src="../../../assets/icon/icon-addr-white.png"></image>
+      <text>深圳</text>
+    </view>
+    <view class="input-box">
+      <image src="../../../assets/icon/icon-sousuo.png"></image>
+      <input placeholder="请输入商品名称或商品关键字"></input>
+    </view>
+  </view>
+
+  <view class="detail-box {{ isShowSett ? 'isShowSett' : ''}}">
+    <view class="nav-box">
+      <block wx:for="{{navList}}" wx:key="index">
+        <view class="item {{index == navActive ? ' active' : ''}}" bindtap="switchNav" data-index="{{index}}">
+          <image wx:if="{{item.icon}}" src="{{item.icon}}"></image>
+          <view>{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+    
+    <view class="list-box">
+      <view class="banner-box">
+        <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+        <view class="title">优惠公告：美颜套餐拼团进行中，每份优惠10元</view>
+      </view>
+
+
+      <block wx:for="{{classList}}" wx:key="index" wx:for-item="item">
+        <view  bindtap="switchModel_detail" class="item-box">
+          <view class="title">{{item.title}}</view>
+            <block wx:for="{{item.list}}" wx:key="index" wx:for-item="food">
+              <view class="food">
+                <view class="left">
+                  <image src="{{food.pic}}"></image>
+                </view>
+                <view class="right">
+                  <view class="name">霸气红糖姜茶</view>
+                  <view class="msg">霸气红糖姜详细描述霸气红糖姜详细描……</view>
+                  <view class="count">月售801   赞11</view>
+                  <view class="price">
+                    <view>
+                      <text class="price-1"><text>￥</text> 78</text>
+                      <text class="price-2">￥38</text>
+                    </view>
+                    <view class="btn-box">
+                      <view wx:if="{{food.isCan}}" catchtap="switchModel">选规格</view>
+                      <image wx:else src="../../../assets/icon/icon-add.png"></image>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </block>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="sett-box" wx:if="{{isShowSett}}">
+    <view class="price">
+      <image src="../../../assets/icon/icon-money.png"></image>
+      <text>¥666.66</text>
+    </view>
+    <view bindtap="handlePay">去结算</view>
+  </view>
+
+  <view class="popup-box" wx:if="{{isShow}}" bindtap="switchModel">
+    <view class="info" catchtap="catchtap">
+      <view class="title">霸气红糖姜茶</view>
+      <view class="center">
+        <view class="list-box">
+          <view class="top">包装:</view>
+          <view class="list">
+            <view class="active">分装 (推荐)</view>
+            <view>现喝</view>
+          </view>
+        </view>
+        <view class="list-box">
+          <view class="top">口味:</view>
+          <view class="list">
+            <view class="active">经典 (标准糖)</view>
+            <view>经典 (少糖)</view>
+            <view>无姜 (标准糖)</view>
+            <view>无姜 (少糖)</view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom">
+        <view class="left">
+          <view>
+            <text>￥</text>12
+          </view>
+          <view>(分装 (推荐)，经典（标…)</view>
+        </view>
+        <view class="right">
+          <text>+</text>加入购物车
+        </view>
+      </view>
+    </view>
+  </view>
+	
+	<view class="popup-box" wx:if="{{isShow_detail}}" bindtap="switchModel_detail">
+		<view class="info posi_div" catchtap="catchtap">
+      <image class='close_posi_img'  bindtap="switchModel_detail" src='../../../assets/icon/closedetail.png'></image>
+			<view  class='detailimg_div'>
+				<image src="http://47.106.206.50/yuefu/assets/image/pageImages/food-4.png"></image>
+			</view>
+			<view class="title">霸气红1糖姜茶</view>
+                <view class='content_detail'>
+          黑糖暖宫姜枣茶黑糖暖宫姜枣茶黑糖暖宫姜枣茶黑糖暖宫姜枣茶黑糖暖宫姜枣茶黑糖暖宫姜枣茶黑糖暖宫姜枣茶黑糖暖宫姜枣茶
+          </view>
+      <view class='border_div'></view>
+			<view class="bottom_detail">
+				<view class="left_detail">
+          <view>黑糖暖宫姜枣茶</view>
+
+					<view >
+						<text class='color_red_box'>￥<text class='color_red'>78</text></text>
+            
+            <text class='xxx'>￥88</text>
+					</view>
+					
+				</view>
+				<view class="right_detail">
+        <view>
+        <text>+</text>加入购物车
+        </view>
+					
+				</view>
+			</view>
+		</view>
+	</view>
+	
+</view>

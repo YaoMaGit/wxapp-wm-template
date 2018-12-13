@@ -1,0 +1,55 @@
+<view>
+	<view class='title_div'>
+		<image src='../../../assets/icon/comment.png'></image>
+		<text>全部评论（1）</text>
+	</view>
+</view>
+
+<view class="com_box">
+	<view class="left_div">
+		<image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1788562038,3472846301&fm=27&gp=0.jpg'></image>
+	</view>
+	<view class="right_div">
+		<view class="name">1****0</view>
+		<view class="time">1分钟前 1楼</view>
+		<view class="content">我刚才用这个方法试了一下，真的味道不一样， 楼主很赞哦</view>
+		<view class="btn_box">
+			<view class="btn_div1"></view>
+			<view class="btn_div2">
+				<view class="btn_div_text">
+					<image class="btn_div_image" src='../../../assets/icon/commentimg.png'></image>
+					<text >评论</text>
+				</view>
+			</view>
+			<view class="btn_div3">
+				<view class="btn_div_text">
+					<image class="btn_div_image" src='../../../assets/icon/goods.png'></image>
+					<text>点赞</text>
+				</view>
+			</view>
+			<view class="btn_div4">
+				<view class="btn_div_text">
+					<image class="btn_div_image" src='../../../assets/icon/lajij.png'></image>
+					<text >删除</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view>
+	<view class='cmbtn' bindtap="open_go_comment">
+		<image src='../../../assets/icon/yijian.png'></image>
+		<text>我来评论</text>
+	</view>
+
+  <view class="comment-success" wx:if="{{isShow}}" bindtap="isShowPopup">
+    <view class="info">
+      <image src="../../../assets/icon/success@2x.png"></image>
+      <view class="text">回复成功</view>
+      <view class="close">确定</view>
+    </view>
+  </view>
+</view>

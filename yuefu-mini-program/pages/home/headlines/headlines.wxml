@@ -1,0 +1,18 @@
+<view class="container">
+  <block wx:for="{{list}}" wx:key="index">
+    <navigator hover-class="none" url="../headlineDetail/headlineDetail" class="item">
+      <view class="name">
+        <image src="../../../assets/icon/icon-chi.png"></image>
+        靠谱清单
+      </view>
+      <view class="pic">
+        <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+      </view>
+      <view class="title">海岛寻鲜：听说越大的虾越好吃？</view>
+      <view class="text">
+        <view>你吃过大虾吗？</view>
+        <view> 漫长的生长周期和生长环境，注定了大虾们的与众不同，本周同….</view>
+      </view>
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 132rpx;
+  left: 94rpx;
+  width: 516rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 0 30rpx 26rpx 30rpx;
+}
+.info .top {
+  display: flex;
+  flex-direction: row;
+  height: 136rpx;
+  align-items: center;
+  color: #333333;
+  font-size: 30rpx;
+}
+.info .top image {
+  width: 84rpx;
+  height: 84rpx;
+  margin-right: 22rpx;
+}
+.info .msg>view:nth-child(1) {
+  margin: 0 18rpx;
+  line-height: 1;
+  padding: 24rpx 0;
+  border-top: 1px solid #E5E5E5;
+  color: #333333;
+  font-size: 30rpx;
+}
+.info .msg>view:nth-child(2) {
+  height: 280rpx;
+}

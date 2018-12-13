@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="detail">
+    <image src="../../../assets/icon/icon-bg-3.png"></image>
+    <view class="info">
+      <view>账号余额（元）</view>
+      <view>
+        <view>300.00</view>
+        <view bindtap='open_getpay' class="btn">去充值 ></view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-box">
+    <view data-index="0" bindtap="switchBox">
+      <image src="../../../assets/icon/icon-cz-3.png"></image>
+      <text>交易明细</text>
+    </view>
+    <view data-index="1" bindtap="switchBox">
+      <image src="../../../assets/icon/icon-cz-2.png"></image>
+      <text>充值金额</text>
+    </view>
+  </view>
+
+  <view wx:if="{{activeIndex == 1}}">
+    <view class="title">
+      <view class="line"></view>请选择充值金额
+    </view>
+    <view class="count-box">
+      <view class="item {{index == activeMoneyIndex ? 'active' : ''}}" wx:for="{{moneyList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="switchMoney">
+        <image wx:if="{{index == activeMoneyIndex}}" src="../../../assets/icon/icon-cz-1.png"></image>
+        <view class="item-info">
+          <view wx:if="{{item.money}}">{{item.money}}</view>
+          <view>{{item.tips}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="title">
+      <view class="line"></view>充值说明
+    </view>
+
+    <view class="text-box">
+      <text>充值即送小主会员，充值的钱可以在商城消费，但不可提现，开通 会员即送免费喝茶劵哦，例如充值100元送6杯，充值200送12杯….. </text>
+    </view>
+    
+
+    <view class="save-btn">
+      <view>立即支付</view>
+    </view>
+  </view>
+  <view wx:if="{{activeIndex == 0}}" class="log-box">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="log-item">
+        <view>
+          <image src="{{item.icon}}"></image>
+        </view>
+        <view class="right">
+          <view class="top">
+            <view>充值</view>
+            <view>2018-11-20 15:43:30</view>
+          </view>
+          <view class="bottom">
+            <view>账号余额：210.00</view>
+            <view>+200.00</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  
+
+</view>

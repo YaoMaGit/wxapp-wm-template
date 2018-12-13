@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="tips-box">
+    <view>
+      <text>以下商品可使用满60.00元减30.00元的优惠券（仅产品使用平台线上使用</text>
+    </view>
+    <view>
+      <text>使用期限：2018-6-20—2018-6-27</text>
+    </view>
+  </view>
+
+  <view class="list-box">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="item">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">
+          <view>月子催奶</view>
+          <view>鲫鱼萝卜丝汤</view>
+        </view>
+        <view class="tab">特价</view>
+        <view class="yuanjia">¥ 32.00</view>
+        <view class="xianjia">
+          <text>¥  </text>32.00
+        </view>
+        <image bindtap="couponsSelect" class="add-icon" src="../../../assets/icon/icon-add-blue.png">/</image>
+      </view>
+    </block>
+  </view>
+</view>

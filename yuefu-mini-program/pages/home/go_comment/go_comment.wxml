@@ -1,0 +1,9 @@
+<view class="box">
+	<view class="left">取消</view>
+	<view class="center"></view>
+	<view class="right" bindtap="handleSave">发送</view>
+</view>
+
+<view class="content">
+	<textarea placeholder="回复楼主" placeholder-style="color:#999999;" />
+</view>

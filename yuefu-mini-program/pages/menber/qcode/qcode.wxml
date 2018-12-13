@@ -1,0 +1,12 @@
+<view class='inupt_div'>
+  <view class='left'>
+    <image src='../../../assets/icon/qcode.png'></image>
+  </view>
+  <view class='right'>
+    <input maxlength="10" placeholder="请输入兑换码" />
+  </view>
+</view>
+
+<view class="address">
+  <view class="address_new">提交</view>
+</view>

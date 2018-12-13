@@ -1,0 +1,140 @@
+<view class="container">
+  <view class="detail-box">
+    <view class="top">
+      <image src="../../../assets/icon/icon-card.png"></image>
+    </view>
+    <view class="pic">
+      <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+    </view>
+    <view class="title">
+      <view>
+        <image src="../../../assets/icon/icon-chi.png"></image>
+      </view>
+      <view class="text">
+        <view>美味猎手在盒马 </view>
+        <view>《美味猎手》节目同款世界级海…… </view>
+      </view>
+    </view>
+
+    <view class="content">
+      <view class="name">海岛寻鲜：听说越大的虾越好吃？</view>
+      <view class="count">142阅读</view>
+      <view class="list">
+        <view>你吃过大虾吗？ </view>
+        <view>漫长的生长周期和生长环境，注定了大虾们的与众不同。</view>
+        <view>你吃过大虾吗？ </view>
+        <view>漫长的生长周期和生长环境，注定了大虾们的与众不同。</view>
+      </view>
+      <view class="center-title">
+        <view>重磅推出本期明星大虾</view>
+        <view>顶级食材大虾</view>
+      </view>
+      <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+    </view>
+
+    <view class="text-box">
+      <view>
+        <text>秋天为什么容易伤“肺”？中医所谓的“肺”，除了生理学中的“肺”功能之外，还包括了身体外在防御力、内在免疫力、水分代谢、呼吸道机能等，影响层面扩及皮肤、毛发、鼻腔、咽喉、气管等。 </text>
+      </view>
+      <view>
+        <text>中医称“肺为华盖”，为五脏六腑之盖，属娇嫩的内脏，不耐寒热、不容异物入侵，但却因为“开窍于鼻，外合皮毛，外感六淫之邪自口鼻皮毛而入”，特别容易受外在环境影响(外邪侵害)而犯病。</text>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="xihuan-box">
+    <view class="top">
+      <text class="line"></text>
+      <text class="left">猜你喜欢 · </text>
+      <text class="right">EXPLORE</text>
+      <text class="line"></text>
+    </view>
+    <view class="list">
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom-box">
+    <view class="left">
+      <view class="zan">
+        <image src="../../../assets/icon/icon-zan.png"></image>
+      </view>
+      <view class="pinglun" bindtap='open_comment'>
+        <image src="../../../assets/icon/icon-pinglun.png"></image>
+      </view>
+    </view>
+    <view class="right">
+      <image src="../../../assets/icon/icon-card-witer.png"></image>
+      去购买
+    </view>
+  </view>
+
+</view>

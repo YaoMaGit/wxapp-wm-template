@@ -1,0 +1,32 @@
+<view class="search-box">
+
+  <view class="input-box">
+    <image src="../../../assets/icon/icon-sousuo.png"></image>
+    <input placeholder="请输入商品名称或商品关键字"></input>
+  </view>
+  <view class="addr">
+    <text>搜索</text>
+  </view>
+</view>
+
+
+<view class='item_box'>
+  <view class='hot_title'>
+    热门搜索
+  </view>
+
+  <view class='items_box' bindtap="open_searchlist">
+    <view class='items_hot' wx:for="{{items}}" wx:for-item="item" wx:key="index" wx:for-index="index">{{item}}</view>
+  </view>
+</view>
+
+
+<view class='item_box'>
+  <view class='hot_title'>
+    历史记录
+  </view>
+
+  <view class='items_box'>
+    <view class='items_hot' wx:for="{{items}}" wx:for-item="item" wx:key="index" wx:for-index="index">{{item}}</view>
+  </view>
+</view>

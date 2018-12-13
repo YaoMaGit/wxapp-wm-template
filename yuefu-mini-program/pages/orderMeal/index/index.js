@@ -1,18 +1,85 @@
 // pages/dingcan/index/index.js
+var app = getApp();
+var imageBaseUrl = app.globalData.imageBaseUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imageBaseUrl,
+    navList: [
+      { name: '特惠', icon: '../../../assets/icon/icon-tabs.png' },
+      { name: '热销', icon: '../../../assets/icon/icon-hot.png' },
+      { name: '精选跳槽' },
+      { name: '养生饮品' },
+      { name: '营养粥类' },
+      { name: '滋补汤品' },
+      { name: '瘦美小主' },
+      { name: '月子套餐', icon: '' },
+      { name: '来点小料', icon: '' },
+      { name: '特色主食', icon: '' },
+    ],
+    navActive: 1,
+    classList: [
+      {
+        title: '热销',
+        list: [
+          {
+            pic: 'http://47.106.206.50/yuefu/assets/image/pageImages/food-4.png',
+            isCan: false,
+          },
+          {
+            pic: 'http://47.106.206.50/yuefu/assets/image/pageImages/food-4.png',
+            isCan: true,
+          },
+          {
+            pic: 'http://47.106.206.50/yuefu/assets/image/pageImages/food-4.png',
+            isCan: false,
+          },
+          {
+            pic: 'http://47.106.206.50/yuefu/assets/image/pageImages/food-4.png',
+            isCan: false,
+          },
+        ]
+      }
+    ],
+    isShow: false,
+    isShowSett: true,
+		isShow_detail:false,
+  },
+  // 显示/隐藏规格弹窗
+  switchModel: function () {
+    this.setData({
+      isShow: !this.data.isShow,
+    })
+  },
+	switchModel_detail:function() {
+    this.setData({
+      isShow_detail: !this.data.isShow_detail,
+    })
+  },
+  // 阻止规格弹窗冒泡
+  catchtap: function () {
 
   },
-
+  // 处理结算
+  handlePay: function () {
+    wx.navigateTo({
+      url: '../settlement/settlement',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
+  },
+  switchNav: function (e) {
+    let navActive = e.currentTarget.dataset.index;
+    this.setData({
+      navActive,
+    })
   },
 
   /**

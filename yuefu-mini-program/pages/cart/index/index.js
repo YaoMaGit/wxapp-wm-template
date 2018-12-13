@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goods_list:[1,2]
+    goods_list:[1,2,3,4]
   },
 
   /**

@@ -1,0 +1,41 @@
+<view class="search-box">
+
+  <view class="input-box">
+    <image src="../../../assets/icon/icon-sousuo.png"></image>
+    <input placeholder="请输入城市名/拼音"></input>
+  </view>
+  <view class="addr">
+    <text>搜索</text>
+  </view>
+</view>
+
+<!-- <view class="search-box">
+ <input placeholder="中文/拼音/首字母" class='search-input' bindinput='bindSarchInput' placeholder-class='search-input-placeholder' />
+</view> -->
+<view>
+  <view></view>
+</view>
+<view class='hot'>
+<view class='hottitle'>热门城市</view>
+<view class='item_box'>
+        <view  wx:for="{{hotcity}}" wx:for-item="item"  class='hot_item'>
+      上海
+    </view>
+</view>
+
+</view>
+
+<view class='a-z'>
+ <view wx:for="{{cityAZ}}" wx:key="unique">
+ <view class='' data-id='{{item.cityName}}' bindtap='bindAZ'>{{item.cityName}}</view>
+ </view>
+</view>
+
+<view class='city-item-content'>
+ <view wx:for="{{cityResults}}" wx:key="unique">
+ <view wx:if="{{item.cityPinYin.length > 1}}" class='city-item cityName' data-cityname='{{item.cityName}}' bindtap='citySelected'>{{item.cityName}}
+ </view>
+ <view wx:else class='city-item-A-Z cityName ' bindtap='citySelected' data-cityname='{{item.cityName}}'>{{item.cityName}}</view>
+ <!-- <view data-cityname='{{item.cityName}}' bindtap='citySelected' >{{item.cityName}}</view> -->
+ </view>
+</view>

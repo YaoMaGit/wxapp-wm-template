@@ -1,0 +1,31 @@
+.item {
+  background: #fff;
+  margin-bottom: 12rpx;
+  padding: 20rpx;
+}
+.name {
+  color: #444444;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 16rpx;
+}
+.name image {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 10rpx;
+}
+.pic {
+  height: 382rpx;
+}
+.title {
+  color: #444444;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 10rpx 0;
+}
+.text {
+  color: #999999;
+  font-size: 24rpx;
+  line-height: 34rpx;
+}

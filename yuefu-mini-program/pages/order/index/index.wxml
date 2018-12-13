@@ -20,7 +20,7 @@
     <view class='list_center'>
       <view class='list_center_left'>
         <view>
-          <image src='../../../assets/image/invite.png'></image>
+          <image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=614163513,3938513931&fm=200&gp=0.jpg'></image>
         </view>
       </view>
       <view class='list_center_center'>
@@ -46,11 +46,26 @@
         <text>更多</text>
       </view>
       <view class='list_bottom_right'>
-        <view class='cancle_div'>
+              <view class='cancle_div' wx:if="{{active==0}}" bindtap="open_cancel">
           <text>取消订单</text>
         </view>
-        <view class='pay_div' bindtap="open_pay">
+        <view class='pay_div' wx:if="{{active==0}}" bindtap="open_pay">
           <text>去支付</text>
+        </view>
+        <view class='cancle_div' wx:if="{{active==1}}" bindtap="open_cancel">
+          <text>取消订单</text>
+        </view>
+        <view class='pay_div' wx:if="{{active==1}}" bindtap="open_pay">
+          <text>去支付</text>
+        </view>
+        <view class='pay_div' wx:if="{{active==2}}" bindtap="open_tix">
+          <text>提醒发货</text>
+        </view>
+        <view class='pay_div' wx:if="{{active==3}}" bindtap="open_ok">
+          <text>确认收货</text>
+        </view>
+        <view class='cancle_div'  wx:if="{{active==4}}" bindtap="open_pj">
+          <text>待评价</text>
         </view>
       </view>
     </view>
@@ -61,23 +76,56 @@
 
 
 <!--弹窗-->
-<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
-<view class="modal-dialog" wx:if="{{showModal}}">
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_1}}"></view>
+<view class="modal-dialog" wx:if="{{showModal_1}}">
   <view class="modal-input">
-    <image src='../../../assets/image/invite.png'></image>
+    <image src='../../../assets/icon/ok-goods.png'></image>
   </view>
   <view class="modal-footer">
     <text>确认收货成功</text>
   </view>
 </view>
-
 <!--弹窗-->
-<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
-<view class="modal-dialog" wx:if="{{showModal}}">
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal_2}}">
   <view class="modal-input">
-    <image src='../../../assets/image/组8@3x@2x.png'></image>
+    <image src='../../../assets/icon/8@3x@2x.png'></image>
+  </view>
+  <view class="modal-footer">
+    <text>提醒商家发货成功</text>
+  </view>
+</view>
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_3}}"></view>
+<view class="modal-dialog" wx:if="{{showModal_3}}">
+  <view class="modal-input">
+    <image src='../../../assets/icon/Group2@3x.png'></image>
   </view>
   <view class="modal-footer">
     <text>感谢您的评价</text>
   </view>
+</view>
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_4}}"></view>
+<view class="modal-dialog" wx:if="{{showModal_4}}">
+  <view class="modal-input">
+    <image src='../../../assets/icon/8@3x@2x.png'></image>
+  </view>
+  <view class="modal-footer">
+    <text>感谢您的评价</text>
+  </view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_5}}"></view>
+<view class="modal-dialog " wx:if="{{showModal_5}}">
+  <view class="modal-input cancl_div">
+    <image src='../../../assets/icon/14@3x@2x.png'></image>
+  </view>
+  <view class="modal-footer xx">
+    <text>您真的要取消订单吗？</text>
+  </view>
+    <view class="footer_btn">
+    <view class='no_btn'>取消</view><view>确认</view>
+    </view>
 </view>

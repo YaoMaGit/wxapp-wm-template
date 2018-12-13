@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="box">
+    <view class="date">2018:2/10/11 12:30</view>
+
+    <view class="left">
+      <image class="triangle" src="../../../assets/icon/bg-service.png"></image>
+      <view class="left-info">
+        <view class="top">
+          <text>亲，月府小主24小时随时恭候为您服务，您可以选择您喜爱的食物，。</text>
+        </view>
+        <view class="tips-box">
+          <view class="title">您可能会遇到以下问题：</view>
+          <view class="tips">收到商品有问题</view>
+          <view class="tips">查看不到配送物流</view>
+          <view class="tips">订单超时未配送到目的地怎么办</view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="right">
+      <view>
+        <text>你好，我想要杯可乐，中杯大概多大呢?</text>
+        <image class="triangle" src="../../../assets/icon/icon-triangle-blue.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="input-box">
+    <image class="left-icon" src="../../../assets/icon/icon-huotong.png"></image>
+    <view>
+      <input placeholder="请输入您要咨询的问题"></input>
+      <image src="../../../assets/icon/icon-xiaolian.png"></image>
+    </view>
+    <image class="right-icon" src="../../../assets/icon/icon-add.png"></image>
+  </view>
+</view>

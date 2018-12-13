@@ -1,0 +1,83 @@
+.search-box {
+  display: flex;
+  height: 110rpx;
+  background: #161d3a;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.search-box .addr {
+  flex: 1;
+  width: 172rpx;
+  display: flex;
+  color: #fdfdfd;
+  font-size: 30rpx;
+  align-items: center;
+  padding-left: 15rpx;
+}
+
+.search-box .addr image {
+  width: 22rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+
+.search-box .input-box {
+  flex: 7;
+  display: flex;
+  align-items: center;
+  height: 62rpx;
+  background: #fff;
+  border-radius: 30rpx;
+  font-size: 22rpx;
+  padding: 0 30rpx;
+}
+
+.search-box .input-box image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+}
+
+.search-box .input-box input {
+  flex: 1;
+}
+
+
+
+.item_box{
+  padding: 0 10rpx;
+  padding-bottom: 35rpx;
+}
+.hot_title{
+  font-size: 30rpx;color: #444444;
+  margin: 15rpx;
+}
+/* .items_box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.items_hot{
+  flex: 1
+} */
+.items_box {
+order:2;
+display:flex;
+flex-flow:row wrap;
+}
+
+.items_hot {
+min-width:150rpx;
+}
+
+.items_hot{
+  background: #ECECEC;
+  color: #444444;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 15rpx; 
+  text-align: center;
+  margin: 10rpx;
+}

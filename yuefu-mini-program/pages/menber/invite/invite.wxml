@@ -1,11 +1,11 @@
 <view class='padding_css'>
-  <image  src="../../../assets/image/invite.png"></image>
+  <image  src="../../../assets/icon/invite.png"></image>
 </view>
 <view >
   <text>推广奖励</text>
 </view>
 <view  class='padding_css'>
-<image src="../../../assets/image/收文流程@2x.png"></image>
+<image src="../../../assets/icon/liuc.png"></image>
 
 </view>
 <view>

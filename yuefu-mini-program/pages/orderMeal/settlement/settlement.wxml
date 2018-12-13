@@ -1,0 +1,276 @@
+<view class="container">
+  <view class="top-tabs">
+    <view class="tabs-bg">
+      <image src="../../../assets/icon/icon-bg.png" class="{{tabActive === 1 ? 'rotate' : ''}}"></image>
+    </view>
+    <view class="box">
+      <view data-index="{{index}}" wx:for="{{tabs}}" wx:key="index" bindtap="switchTabs">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="addr-box item-box" wx:if="{{tabActive === 0}}">
+    <view class="addr-info">
+      <!-- <view class="">
+        <image src="../../../assets/icon/icon-addr-gary.png"></image>
+        <text>配送地址</text>
+      </view> -->
+      <view>
+        <text>深圳市龙华区中梅路光浩国际中心6楼S</text>
+      </view>
+      <view>
+        <text>林（女士）</text>
+        <text>11345678912</text>
+      </view>
+      <image class="icon-arrow" src="../../../assets/icon/icon-arrow-down.png"></image>
+    </view>
+    <view class="time-box" bindtap="isShowTimePopup">
+      <view>立即送出</view>
+      <view>大约12:04送达</view>
+      <image class="icon-arrow" src="../../../assets/icon/icon-arrow-down.png"></image>
+    </view>
+  </view>
+
+  <view class="ziti-box item-box" wx:if="{{tabActive === 1}}">
+    <view class="addr-text">
+      <text>深圳市龙华区中梅路光浩国际中心6楼S</text>
+    </view>
+    <view class="map-box">
+      <image src="../../../assets/icon/bg-map.png"></image>
+    </view>
+    <view class="date-box">
+      <view class="left">
+        <view>自取时间</view>
+        <view>
+          <view>10:36</view>
+          <image src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="right">
+        <view>预留电话：</view>
+        <view>
+          <view>13501673421</view>
+          <image src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="tips-box">
+      <checkbox/>同意并接受《到店自取服务协议》
+    </view>
+  </view>
+
+  <view class="food-box item-box">
+    <view class="title">订单详情（龙华店）</view>
+    <view class="list">
+      <block wx:for="{{list}}" wx:key="index">
+        <view class="item">
+          <image class="left" src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+          <view class="right">
+            <view>
+              <view>荷包蛋套餐</view>
+              <view><text>¥</text>38.8</view>
+            </view>
+            <view>x 1</view>
+          </view>
+        </view>
+      </block>
+      <view class="load-more">
+        展开更多
+        <image class="icon-arrow" src="../../../assets/icon/icon-arrow-down.png"></image>
+      </view>
+    </view>
+
+    <view class="other-price">
+      <view>
+        <view>包装费</view>
+        <view><text>¥</text>3</view>
+      </view>
+      <view>
+        <view>配送费</view>
+        <view><text>¥</text>3</view>
+      </view>
+    </view>
+
+    <view class="youhui-box">
+      <view>
+        <view>
+          <image src="../../../assets/icon/icon-jian-blue.png"></image>减配送费
+        </view>
+        <view>-￥6</view>
+      </view>
+      <view>
+        <view>
+          <image src="../../../assets/icon/icon-jian.png"></image>满减优惠
+        </view>
+        <view>-￥6</view>
+      </view>
+      <view>
+        <view>
+          <image src="../../../assets/icon/icon-jian.png"></image>会员优惠
+        </view>
+        <view>-￥6</view>
+      </view>
+      <navigator hover-class="none" url="../selectCoupon/selectCoupon" class="dikou">
+        <view>抵用券</view>
+        <view>
+          <view>暂无可用</view>
+          <image src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="price-detail">
+      <view>
+        <view>优惠规则</view>
+        <image src="../../../assets/icon/icon-issue.png"></image>
+      </view>
+      <view class="price-box">
+        <view class="youhui">
+          <text>已优惠</text>
+          <text>¥16</text>
+        </view>
+        <view class="price">
+          <text>小计</text>
+          <text>
+            <text>¥</text>26.5
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="mianfei-box item-box">
+    <view class="top">
+      <text>免费领取</text>
+      <text>满35元免费领取（2选1）</text>
+    </view>
+    <view class="list">
+      <block wx:for="{{mianfeiList}}" wx:key="index">
+        <view class="item" data-index="{{index}}">
+          <view class="left">
+            <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+          </view>
+          <view class="center">
+            <view>红糖姜茶+黄瓜片</view>
+            <view>
+              <image src="../../../assets/icon/icon-hot-2.png"></image>
+              83人领取
+            </view>
+            <view>￥0 <text>￥12</text> </view>
+          </view>
+          <view class="right" bindtap="isShowGiftsPopup">免费领取</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="other-box item-box">
+    <view class="youhui-box">
+      <view class="dikou">
+        <view>订单备注</view>
+        <view>口味偏好
+          <image src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="dikou" bindtap="isShowPayListPopup">
+        <view>支付方式</view>
+        <view>
+          <image src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="xieyi-box">
+    <checkbox></checkbox>
+    <text>我已阅读并同意《支付协议》</text>
+  </view>
+
+  <view class="pay-box">
+    <view class="left">已优惠￥17</view>
+    <view class="center">
+      合计 ￥ <text>26.5</text>
+    </view>
+    <view class="right" bindtap="handlePay">确认支付</view>
+  </view>
+
+  <view class="time-popup popup" wx:if="{{isShowTime}}" bindtap="isShowTimePopup">
+    <view class="info-box" catchtap="catchtap">
+      <view class="select-box">
+        <view class="date-list">
+          <view
+            bindtap="bindDate"
+            class="{{dateActive === index ? 'active' : ''}}"
+            wx:for="{{date}}"
+            wx:key="{{index}}"
+            data-index="{{index}}"
+          >
+            {{item.date}}
+          </view>
+        </view>
+        <view class="time-list">
+          <view
+            bindtap="bindTime"
+            class="time-item {{timeActive === index ? 'active' : ''}}"
+            wx:for="{{date[dateActive].list}}"
+            wx:key="{{index}}"
+            wx:for-item="time"
+            data-index="{{index}}"
+          >
+            <view class="t">{{time.time}}</view>
+            <view class="p">
+              {{time.price}}
+              <image wx:if="{{timeActive === index}}" src="../../../assets/icon/icon-tick.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="close-btn" bindtap="isShowTimePopup">取消</view>
+    </view>
+  </view>
+
+  <view class="gifts-popup popup" wx:if="{{isShowGifts}}" bindtap="isShowGiftsPopup">
+    <view class="gifts-info" catchtap="catchtap">
+      <view class="list">
+        <view class="top">
+          <image src="../../../assets/icon/icon-close-gary.png" bindtap="isShowGiftsPopup"></image>选择赠品
+        </view>
+        <view class="item" wx:for="{{giftsList}}" wx:key="index" data-index="{{index}}" bindtap="onChangeGifts">
+          <view>赠品{{index + 1}}</view>
+          <image src="../../../assets/icon/icon-tick-red.png" wx:if="{{giftsActive === index}}"></image>
+        </view>
+        <view class="bottom" bindtap="isShowGiftsPopup">确定</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="pay-popup popup" wx:if="{{isShowPayList}}" bindtap="isShowPayListPopup">
+    <view class="pay-list-info" catchtap="catchtap">
+      <view class="title">
+        选择付款方式
+        <image class="close-btn" src="../../../assets/icon/icon-close-gary-2.png" bindtap="isShowPayListPopup"></image>
+      </view>
+      <view class="item" wx:for="{{payList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="swtchPay">
+        <view class="pay-logo">
+          <image src="{{item.icon}}"></image>
+        </view>
+        <view class="pay-name">{{item.name}}</view>
+        <view class="pay-radio">
+          <image wx:if="{{payActive === index}}" src="../../../assets/icon/icon-select-blue.png"></image>
+          <image wx:else src="../../../assets/icon/icon-select.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="success-popup popup" wx:if="{{isPaySuccess}}" bindtap="isShowPayPopup">
+    <view class="success-info" catchtap="catchtap">
+      <image class="close-icon" src="../../../assets/icon/icon-close-gary.png" bindtap="isShowPayPopup"></image>
+      <view>
+        <image src="../../../assets/icon/icon-success.png"></image>
+      </view>
+      <view>支付成功</view>
+      <view class="btn">查看订单</view>
+    </view>
+  </view>
+
+</view>

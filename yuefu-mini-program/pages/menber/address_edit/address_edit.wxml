@@ -1,7 +1,7 @@
 <view>
 	<view class="item_div">
 		<view class="img_div">
-			<image src="../../../assets/image/gps_1.png"></image>
+			<image src="../../../assets/icon/tx@2x.png"></image>
 		</view>
 		<view class="input_div">
 			<input bindinput="bindKeyInput" placeholder="张三" />
@@ -9,7 +9,7 @@
 	</view>
 	<view class="item_div">
 		<view class="img_div">
-			<image src="../../../assets/image/gps_1.png"></image>
+			<image src="../../../assets/icon/dh@2x.png"></image>
 		</view>
 		<view class="input_div">
 			<input bindinput="bindKeyInput" placeholder="15100011122" />
@@ -17,7 +17,7 @@
 	</view>
 	<view class="item_div">
 		<view class="img_div">
-			<image src="../../../assets/image/gps_1.png"></image>
+			<image src="../../../assets/icon/dt@2x.png"></image>
 		</view>
 		<view class="input_div">
 			<input bindinput="bindKeyInput" placeholder="江苏省 南京市 鼓楼区" />
@@ -25,7 +25,7 @@
 	</view>
 	<view class="item_div">
 		<view class="img_div">
-			<image src="../../../assets/image/gps_1.png"></image>
+			<image src="../../../assets/icon/dz@2x.png"></image>
 		</view>
 		<view class="input_div">
 			<input bindinput="bindKeyInput" placeholder="鼓楼区18号" />

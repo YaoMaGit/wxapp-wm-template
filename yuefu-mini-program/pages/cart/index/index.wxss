@@ -12,28 +12,33 @@
 	flex: 1;
 	margin-right: 10rpx;
 }
-
+.title_div_like{
+  font-size: 26rpx;
+}
 .top_left>view {
 	border: 1px solid #ff5052;
 	border-radius: 3px;
-	padding: 0rpx 10rpx;
+	padding: 0rpx 5rpx;
 	text-align: center;
 	color: #ff5052;
+  width: 105rpx;
 }
 
 .top_center {
-	flex: 4;
+	flex: 3;
 }
 
 .top_right {
 	flex: 1;
+  padding-left: 25rpx;
 }
 
 .top_right>image {
 	display: inline-block;
 	vertical-align: middle;
-	width: 25rpx;
-	height: 34rpx;
+	width: 34rpx;
+	height: 30rpx;
+  margin-bottom: 5rpx;
 }
 
 .list_div {
@@ -47,7 +52,10 @@
 	flex: 1;
 	line-height: 205rpx;
 }
-
+.radio_div image{
+  width: 34rpx;
+  height: 34rpx;
+}
 .image_div {
 	flex: 3;
 }
@@ -132,13 +140,13 @@
 	flex-wrap: wrap;
 	font-size: 24rpx;
 	background: #efefef;
-	margin-top: 20rpx;
+  margin-bottom: 100rpx;
 }
 
 .row_goods_div{
-	width: 48%;
+	width: 49%;
 	background: #fff;
-	margin-bottom: 15rpx;
+	margin-bottom: 7rpx;
 
 }
 .row_goods_div>view{
@@ -162,12 +170,12 @@
 }
 .carimg_div>view{
 	border-radius: 50%;
-	padding: 4rpx;
+	padding: 7rpx;
 	background: #6497FF;
 }
 .car_img{
 	width: 32rpx;
-	height: 32rpx;
+	/* height: 32rpx; */
 }
 .price_div_text1{
 	color: #FF5052;
@@ -187,18 +195,46 @@
 	
 }
 .fixed_radio_div{
-	flex: 1;
-	padding: 20rpx;
+	flex: 3;
+	/* padding: 20rpx; */
+  padding-top: 30rpx;
+  padding-left:20rpx; 
+}
+.fixed_radio_div image{
+width: 34rpx;
+height: 34rpx;
+vertical-align: middle;
 }
 .fixed_price_div{
-	flex: 3;
+	flex: 10;
 	padding: 20rpx;
 }
 .fixed_pay_div{
-	flex: 1;
+	flex: 4;
 	padding: 20rpx;
 	background:#6497FF ;
 	text-align: center;
 	color: #FFFFFF;
 	font-size: 34rpx;
+}
+
+.xihuan-box .top {
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.xihuan-box .top .line {
+  display: inline-block;
+  width: 80rpx;
+  height: 1px;
+  background: #9F9F9F;
+  margin: 0 12rpx;
+  margin-bottom: 8rpx;
+}
+.xihuan-box .top .left {
+  color: #666666;
+}
+.xihuan-box .top .right {
+  color: #FF5151;
 }

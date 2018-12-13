@@ -1,0 +1,34 @@
+<view class="search-box">
+
+  <view class="input-box">
+    <image src="../../../assets/icon/icon-sousuo.png"></image>
+    <input placeholder="请输入商品名称或商品关键字"></input>
+  </view>
+  <view class="addr">
+    <text>搜索</text>
+  </view>
+</view>
+
+
+<view class="ylike_list">
+	<view class="goods_item" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
+		<view class="goods_left">
+			<view>
+				<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=614163513,3938513931&fm=200&gp=0.jpg"></image>
+			</view>
+		</view>
+		<view class="goods_right">
+			<view class="title_div">[2罐包邮]阿胶乌鸡汤+花胶老母鸡汤</view>
+			<view class="subtitle_div">
+				<view class="subtitle_div1">功效说明：</view>
+				<view class="subtitle_div2">
+					功效说明功效说明功效说明功效说明功效说 功效说明功效说明功效说明明
+				</view>
+			</view>
+			<view><text class="price_div1">¥36.00</text><text class="price_div2">¥40.00</text></view>
+			<view >已卖出162件 
+			
+			<image class="add_img" src="../../../assets/icon/add.png"></image></view>
+		</view>
+	</view>
+</view>

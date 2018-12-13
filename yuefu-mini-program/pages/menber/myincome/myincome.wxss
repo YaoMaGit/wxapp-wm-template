@@ -1,0 +1,78 @@
+/* pages/menber/myincome/myincome.wxss */
+.box{
+	background: #FFFFFF;
+	display: flex;
+	padding: 25rpx 0px 0px 0px ;
+}
+.box>view{
+	flex: 1;
+	text-align: center;
+	font-size: 28rpx;
+color: #333333;
+}
+.tab{
+	display: inline-block;
+	padding-bottom: 15rpx;
+}
+.active{
+  
+  	color: #6B9BFC;
+	border-bottom: 4rpx solid #6B9BFC;
+}
+
+
+.title_class{
+height:70rpx;
+font-size:24rpx;
+line-height: 70rpx;
+font-weight:bold;
+color:rgba(68,68,68,1);
+}
+/* list */
+
+.log-box {
+  background: #fff;
+}
+.log-box .log-item {
+  display: flex;
+  height: 116rpx;
+  align-items: center;
+  border-bottom: 1px solid #E7E7E7;
+  padding: 0 15rpx;
+}
+.log-box .log-item>view:nth-child(1) {
+  width: 67rpx;
+  height: 67rpx;
+  margin-right: 8rpx;
+}
+.log-box .log-item>view:nth-child(2) {
+  flex: 1;
+}
+.log-box .log-item .right>view {
+  display: flex;
+  justify-content: space-between;
+}
+.log-box .log-item .right .top {
+  font-size: 26rpx;
+  color: #333333;
+  margin-bottom: 8rpx;
+}
+.log-box .log-item .right .top>view:last-child {
+  font-size: 28rpx;
+  color: #333333;
+}
+.log-box .log-item .right .bottom {
+  font-size: 22rpx;
+  color: #333333;
+}
+.log-box .log-item .right .bottom>view:last-child {
+  font-size: 24rpx;
+}
+
+
+
+.header_img{
+  width:30rpx;
+  height:30rpx;
+  vertical-align: middle;
+}

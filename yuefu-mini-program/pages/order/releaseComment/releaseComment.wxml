@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="box">
+    <view class="list">
+      <view class="item">
+        <view class="left">服务态度</view>
+        <view class="center">
+          <image
+            src="../../../assets/icon/{{serviceCount >= index ? 'icon-stars-active' : 'icon-stars-1'}}.png"
+            wx:for="{{count}}"
+            wx:key="{{index}}"
+            data-index="{{index}}"
+            bindtap="switchService"
+          ></image>
+        </view>
+        <view class="right">非常好</view>
+      </view>
+      <view class="item">
+        <view class="left">口感</view>
+        <view class="center">
+          <image
+            src="../../../assets/icon/{{tasteCunt >= index ? 'icon-stars-active' : 'icon-stars-2'}}.png"
+            wx:for="{{count}}"
+            wx:key="{{index}}"
+            data-index="{{index}}"
+            bindtap="switchTaste"
+          ></image>
+        </view>
+        <view class="right">非常好</view>
+      </view>
+      <view class="item">
+        <view class="left">配送速度</view>
+        <view class="center">
+          <image
+            src="../../../assets/icon/{{speedCount >= index ? 'icon-stars-active' : 'icon-stars-1'}}.png"
+            wx:for="{{count}}"
+            wx:key="{{index}}"
+            data-index="{{index}}"
+            bindtap="switchSpeed"
+          ></image>
+        </view>
+        <view class="right">非常好</view>
+      </view>
+    </view>
+
+    <view class="info-box">
+      <view>
+        <text>菜品口味如何，服务示范周到，是否送的够快，说说优点和美中不 足的地方吧！ </text>
+      </view>
+      <image src="../../../assets/icon/icon-camera.png"></image>
+    </view>
+
+    <view class="btm-box">
+      <view bindtap="switchAnonymous">
+        <image wx:if="{{isAnonymous}}" src="../../../assets/icon/icon-select-blue.png"></image>
+        <image wx:else src="../../../assets/icon/icon-select-gary.png"></image>
+        <view>匿名</view>
+      </view>
+      <view>您的评价可以帮助其他的小伙伴哟</view>
+    </view>
+  </view>
+
+  <view class="btn" bindtap="handleSave">发布</view>
+</view>

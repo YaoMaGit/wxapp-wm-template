@@ -7,7 +7,7 @@
 	background: #FFFFFF;
 	color: #444444;
 	font-size: 28rpx;
-	padding: 10rpx;
+	padding: 15rpx;
 	border-bottom: 1px solid #efefef;
 }
 
@@ -27,6 +27,7 @@
 	color: #444444;
 	font-size: 21rpx;
 	margin-left: 20rpx;
+  margin-top: 10rpx;
 }
 
 .item_right {

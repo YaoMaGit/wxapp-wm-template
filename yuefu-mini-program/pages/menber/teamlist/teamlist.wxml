@@ -1,7 +1,7 @@
 <view class="box">
 	<view class="list_div" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
 		<view class="item_left">
-			<image src="../../../assets/image/become_fenxiao.png"></image>
+			<image src="../../../assets/icon/icon-type-1.png"></image>
 		</view>
 		<view class="item_center">
 			向日葵的微笑

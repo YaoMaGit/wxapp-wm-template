@@ -1,0 +1,41 @@
+/* pages/order/go_comment/go_comment.wxss */
+
+.box {
+	display: flex;
+	height: 75rpx;
+	
+	font-size: 32rpx;
+	line-height: 45rpx;
+	background: #fff;
+	border-bottom: 1rpx solid rgb(216, 214, 214);
+}
+
+.left {
+	flex: 1;
+	line-height: 75rpx;
+	text-align: center;
+}
+
+.center {
+	flex: 4;
+}
+
+.right {
+	flex: 1;
+	line-height: 75rpx;
+	text-align: center;
+	color: #999999;
+}
+
+.content{
+	height:400rpx ;
+	background: #fff;
+	padding-top: 15rpx;
+}
+.content>textarea{
+	width: 95%;
+	font-size:28rpx;
+	height:400rpx ;
+	margin: auto;
+	
+}

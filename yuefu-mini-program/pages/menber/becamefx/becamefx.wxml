@@ -73,3 +73,15 @@
 <view class="address">
 	<view class="address_new">提交</view>
 </view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_1}}"></view>
+<view class="modal-dialog" wx:if="{{showModal_1}}">
+  <view class="modal-input">
+    <image src='../../../assets/icon/6@3x@2x.png'></image>
+  </view>
+  <view class="modal-footer">
+    <text>平台24小时审核</text>
+  </view>
+</view>

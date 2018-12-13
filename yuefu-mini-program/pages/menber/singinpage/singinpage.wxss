@@ -1,0 +1,98 @@
+/* pages/menber/singinpage/singinpage.wxss */
+page {
+	background: #fff;
+}
+
+.box {
+	height: 400rpx;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.spandiv {
+	width: 435rpx;
+	height: 66rpx;
+	line-height: 66rpx;
+	background: #fff;
+	text-align: center;
+	font-size: 28rpx;
+	color: #444444;
+	margin: auto;
+	border-radius: 30rpx;
+	margin-top: 20rpx;
+}
+
+.sin_img {
+	width: 177rpx;
+	height: 195rpx;
+	margin-top: 35rpx;
+
+}
+
+.top_div {
+	text-align: center;
+	margin: 25rpx;
+}
+
+.top_div image {
+	width: 30rpx;
+	height: 34rpx;
+	vertical-align: middle;
+}
+
+.weekdiv {
+	width: 706rpx;
+	height: 56rpx;
+	background: rgba(247, 247, 247, 1);
+	border-radius: 50rpx;
+	display: flex;
+	line-height: 56rpx;
+	font-size: 22rpx;
+	color: rgba(51, 51, 51, 1);
+	margin: auto;
+}
+
+.weekdiv>view {
+	flex: 1;
+	text-align: center;
+}
+
+
+.daydiv {
+	width: 706rpx;
+	height: 71rpx;
+	border-radius: 50rpx;
+	display: flex;
+	line-height: 71rpx;
+	font-size: 22rpx;
+	color: rgba(51, 51, 51, 1);
+	margin: auto;
+	padding-top: 60rpx;
+}
+
+.daydiv>view {
+	flex: 1;
+	text-align: center;
+}
+
+.active_div {
+	width: 70rpx;
+	height: 71rpx;
+	border-radius: 50%;
+	color: #fff;
+	margin: auto;
+	background: rgba(255, 198, 86, 1);
+}
+.posi_div{
+	position: relative;
+	padding-left: 27rpx;
+}
+.true_img {
+	position: relative;
+	top: 28rpx;
+	left:-21rpx;
+	 width:31rpx;
+	height: 22rpx;
+}
+

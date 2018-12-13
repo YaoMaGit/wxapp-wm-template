@@ -1,7 +1,7 @@
 <view class="box">
 	<view class="list_div" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
 		<view class="item_left">
-			<image src="../../../assets/image/become_fenxiao.png"></image>
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=614163513,3938513931&fm=200&gp=0.jpg"></image>
 		</view>
 		<view class="item_center">
 			向日葵的微笑
@@ -10,7 +10,7 @@
 			221次
 		</view>
 		<view class="item_right_right">
-			<image src="../../../assets/image/one.png"></image>
+			<image src="../../../assets/icon/one.png"></image>
 		</view>
 	</view>
 </view>

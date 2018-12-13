@@ -1,0 +1,139 @@
+.container {
+  padding: 24rpx;
+}
+.top {
+
+}
+.top>view {
+  line-height: 1;
+}
+.top>view:nth-child(1) {
+  color: #333333;
+  font-size: 30rpx;
+}
+.top>view:nth-child(2) {
+  margin-top: 36rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 14rpx;
+  font-size: 40rpx;
+  color: #FF5153;
+}
+.top>view:nth-child(2)>view {
+  line-height: 1;
+}
+.top>view:nth-child(2)>view:nth-child(2) {
+  color: #333333;
+  font-size: 24rpx;
+}
+.top>view:nth-child(2) image {
+  width: 26rpx;
+  height: 26rpx;
+}
+.top>view:nth-child(3) {
+  margin-top: 14rpx;
+  color: #333333;
+  font-size: 26rpx;
+}
+
+.detail {
+  margin-top: 58rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  padding: 26rpx 36rpx;
+}
+.detail .all {
+  display: flex;
+}
+.detail .all>view {
+  flex: 1;
+  text-align: center;
+}
+.detail .all .left>view:nth-child(1) {
+  border-right: 1px solid #BFBFBF;
+}
+.detail .all>view>view:nth-child(1) {
+  height: 36rpx;
+  line-height: 36rpx;
+  color: #333333;
+  font-size: 30rpx;
+}
+.detail .all>view>view:nth-child(2) {
+  color: #FF5153;
+  font-size: 34rpx;
+}
+.detail .text {
+  margin-top: 20rpx;
+  font-size: 22rpx;
+  color: #444444;
+  line-height: 40rpx;
+}
+
+.wx-box {
+  margin-top: 26rpx;
+  font-size: 24rpx;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 16rpx;
+}
+.wx-box image {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 12rpx;
+}
+.dian {
+  width: 12rpx;
+  height: 12rpx;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-left: 60rpx;
+}
+.dian>view {
+  background: #000000;
+  width: 8rpx;
+  height: 8rpx;
+  margin: 1px;
+  border-radius: 50%;
+}
+.btn {
+  color: #fff;
+  font-size: 26rpx;
+  width: 612rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  background: #5B91FE;
+  border-radius: 34rpx;
+  margin: 36rpx auto 0;
+}
+
+.ok-popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.ok-popup .info {
+  background: #fff;
+  position: absolute;
+  top: 80rpx;
+  left: 146rpx;
+  width: 450rpx;
+  height: 248rpx;
+  font-size: 28rpx;
+  color: #030000;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.ok-popup .info image {
+  width: 156rpx;
+  height: 136rpx;
+  margin: 26rpx auto 18rpx;
+}

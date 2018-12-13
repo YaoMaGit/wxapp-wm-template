@@ -1,0 +1,28 @@
+/* pages/menber/question/question.wxss */
+.list{
+	margin-top: 20rpx;
+}
+.box {
+	width: 100%;
+	font-size: 28rpx;
+	display: flex;
+		background: #fff;
+	height: 70rpx;
+	border-bottom: 1rpx solid #D8D8D8;
+	line-height: 70rpx;
+}
+
+.left_div {
+	flex: 9;
+	padding-left: 20rpx;
+}
+
+.right_div {
+
+	flex: 1;
+}
+.right_div image{
+width:30rpx;
+height:38rpx;
+margin-top: 15rpx;
+	}

@@ -1,136 +1,143 @@
 <view class="top_div">
-	<view class="card_div">
-		<view class="card_top">
-			<view class="card_top_left">
-				<image src="../../../assets/image/gps_1.png"></image>
-			</view>
-			<view class="card_top_center">
-				<view class="card_top_center_top">张三123（未绑定）</view>
-				<view class="card_top_center_bottom">铂金会员</view>
-			</view>
-			<view class="card_top_right">
-				<view class="card_top_right_top">
-					<image class="singin_img" src="../../../assets/image/singin.png"></image>
-					签到
-					<image class="right_img" src="../../../assets/image/right.png"></image>
+  <view class="card_div back_div">
+    <view class="card_top">
+      <view class="card_top_left">
+        <image src="../../../assets/icon/icon-type-5.png"></image>
+      </view>
+      <view class="card_top_center">
+        <view class="card_top_center_top">张三123（未绑定）</view>
+        <view class="card_top_center_bottom">铂金会员</view>
+      </view>
+      <view class="card_top_right">
+        <view class="card_top_right_top" bindtap='open_singinpage'>
+          <image class="singin_img" src="../../../assets/icon/datemy.png"></image>
+          <view class='padd_top'> 
+          <text>签到</text>    
+            <image class="right_img" src="../../../assets/icon/right.png"></image>
+          </view>
 
-				</view>
-				<view class="card_top_right_bottom">已签到12天</view>
-			</view>
-		</view>
-		<view class="card_bottom">
-			<view class="card_bottom_1"  bindtap='open_score'>
-				<view>5265</view>
-				<view>我的积分</view>
-			</view>
-			<view class="card_bottom_2">
-				<view>5265</view>
-				<view>优惠劵</view>
-			</view>
-			<view class="card_bottom_3" bindtap='open_oftengoods'>
-				<view>5265</view>
-				<view>常买</view>
-			</view>
-			<view class="card_bottom_4">
-				<view>5265</view>
-				<view>余额</view>
-			</view>
-		</view>
-	</view>
+
+        </view>
+        <view class="card_top_right_bottom">已签到12天</view>
+      </view>
+    </view>
+    <view class="card_bottom">
+      <view class="card_bottom_1" bindtap='open_score'>
+        <view  class='num_div'>5265</view>
+        <view>我的积分</view>
+      </view>
+      <navigator hover-class="none" class="card_bottom_2" url="../couponsList/couponsList">
+        <view  class='num_div'>5265</view>
+        <view>优惠劵</view>
+      </navigator>
+      <view class="card_bottom_3" bindtap='open_oftengoods'>
+        <view  class='num_div'>5265</view>
+        <view>常买</view>
+      </view>
+      <navigator hover-class="none" class="card_bottom_4" url="../money/money">
+        <view  class='num_div'>5265</view>
+        <view>余额</view>
+      </navigator>
+    </view>
+  </view>
 </view>
 <!-- 天眼 -->
-<view class="plur_div">
-	<view class="plur_box">
-		<view class="plur_item_1">
-			<image class="item_img" src="../../../assets/image/gps_1.png"></image>
-			<text>签到详情</text>
-		</view>
-		<view class="plur_item_2">
-			<image class="item_img" src="../../../assets/image/gps_1.png"></image>
-			<text>赠送好友</text>
-		</view>
-		<view class="plur_item_3"  bindtap='open_singin'>
-			<image class="item_img" src="../../../assets/image/gps_1.png"></image>
-			<text>签到排行榜</text>
-		</view>
-		<view class="plur_item_4" bindtap='xxx'>
-			<image class="item_img" src="../../../assets/image/gps_1.png"></image>
-			<text>地址管理</text>
-		</view>
-	</view>
+<view class="plur_div touying_div">
+  <view class="plur_box">
+    <navigator hover-class="none" class="plur_item_1" url="../singinpage/singinpage">
+      <image class="item_img" src="../../../assets/icon/@2x.png"></image>
+      <text>签到详情</text>
+    </navigator>
+    <navigator hover-class="none" class="plur_item_2" url="../share/share">
+      <image class="item_img" src="../../../assets/icon/zs@2x.png"></image>
+      <text>赠送好友</text>
+    </navigator>
+    <view class="plur_item_3" bindtap='open_singin'>
+      <image class="item_img" src="../../../assets/icon/qdphb@2x.png"></image>
+      <text>签到排行榜</text>
+    </view>
+    <view class="plur_item_4" bindtap='xxx'>
+      <image class="item_img" src="../../../assets/icon/gps_1.png"></image>
+      <text>地址管理</text>
+    </view>
+  </view>
 </view>
 
 <!-- 我的分销 -->
 <view class="myfx_title_div">
-	<text>我的分销</text>
+  <text>我的分销</text>
 </view>
 <view class="myfx_plur_div">
-	<view class="myfx_plur_box">
-		<view class="myfx_plur_item_1" bindtap='open_becamefx'>
-			<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>成为分销商</text>
-		</view>
-		<view class="myfx_plur_item_2">
-			<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>在线客服</text>
-		</view>
-		<view class="myfx_plur_item_3">
-			<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>意见反馈</text>
-		</view>
-		<view class="myfx_plur_item_4">
-			<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>常见问题</text>
-		</view>
-	</view>
-	<view class="myfx_plur_box padding_css">
-		<view class="myfx_plur_item_1">
-			<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>我要推广</text>
-		</view>
-		<view class="myfx_plur_item_2">
-			<image class="myfx_item_img" bindtap="open_team" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>我的团队</text>
-		</view>
-		<view class="myfx_plur_item_3">
-			<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
-			<text>我的收入</text>
-		</view>
-		<view class="myfx_plur_item_4">
-			<!-- 	<image class="myfx_item_img" src="../../../assets/image/become_fenxiao.png"></image>
+  <view class="myfx_plur_box">
+    <view class="myfx_plur_item_1" bindtap='open_becamefx'>
+      <image class="myfx_item_img" src="../../../assets/icon/beame-fx.png"></image>
+      <text>成为分销商</text>
+    </view>
+    <navigator hover-class="none" class="myfx_plur_item_2" url="../service/service">
+      <image class="myfx_item_img" src="../../../assets/icon/kefu.png"></image>
+      <text>在线客服</text>
+    </navigator>
+    <navigator hover-class="none" class="myfx_plur_item_3" url="../idea/idea">
+      <image class="myfx_item_img" src="../../../assets/icon/yijian.png"></image>
+      <text>意见反馈</text>
+    </navigator>
+    <navigator hover-class="none" class="myfx_plur_item_4" url="../question/question">
+      <image class="myfx_item_img" src="../../../assets/icon/icon-issue-green.png"></image>
+      <text>常见问题</text>
+    </navigator>
+  </view>
+  <view class="myfx_plur_box padding_css">
+    <navigator hover-class="none" class="myfx_plur_item_1" url="../invite/invite">
+      <image class="myfx_item_img" src="../../../assets/icon/become_fenxiao.png"></image>
+      <text>我要推广</text>
+    </navigator>
+    <navigator hover-class="none" class="myfx_plur_item_2" url="../team/team">
+      <image class="myfx_item_img" src="../../../assets/icon/team-my.png"></image>
+      <text>我的团队</text>
+    </navigator>
+    <navigator hover-class="none" class="myfx_plur_item_3" url="../income/income">
+      <image class="myfx_item_img" src="../../../assets/icon/other-my.png"></image>
+      <text>我的收入</text>
+    </navigator>
+    <view class="myfx_plur_item_4">
+      <!-- 	<image class="myfx_item_img" src="../../../assets/icon/become_fenxiao.png"></image>
 			<text>签到详情</text> -->
-		</view>
-	</view>
+    </view>
+  </view>
 </view>
 
 
 <!-- 猜你喜欢 -->
 
-<view class="ylike_div">
-	<text>-</text>
-	<text>猜你喜欢</text>
-	<text>•</text>
-	<text class="eg_div">EXPLORE</text>
-	<text>-</text>
+<view class="ylike_div xihuan-box">
+    <view class="top">
+      <text class="line"></text>
+      <text class="left">猜你喜欢 · </text>
+      <text class="right">EXPLORE</text>
+      <text class="line"></text>
+    </view>
 </view>
 
 <view class="ylike_list">
-	<view class="goods_item" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
-		<view class="goods_left">
-			<view>
-				<image src="../../../assets/image/invite.png"></image>
-			</view>
-		</view>
-		<view class="goods_right">
-			<view class="title_div">[2罐包邮]阿胶乌鸡汤+花胶老母鸡汤</view>
-			<view class="subtitle_div">
-				<view class="subtitle_div1">功效说明：</view>
-				<view class="subtitle_div2">
-					功效说明功效说明功效说明功效说明功效说 功效说明功效说明功效说明明
-				</view>
-			</view>
-			<view><text class="price_div1">¥36.00</text><text class="price_div2">¥40.00</text></view>
-			<view>已卖出162件</view>
-		</view>
-	</view>
+  <view class="goods_item" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
+    <view class="goods_left">
+      <view>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544459300155&di=ebcef6e1a0d58be77ad662f255782664&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D2b1093f95ee736d14c1e844bf33925b7%2F2e2eb9389b504fc2467c6d20efdde71190ef6df0.jpg"></image>
+      </view>
+    </view>
+    <view class="goods_right">
+      <view class="title_div">[2罐包邮]阿胶乌鸡汤+花胶老母鸡汤</view>
+      <view class="subtitle_div">
+        <view class="subtitle_div1">功效说明：</view>
+        <view class="subtitle_div2">
+          功效说明功效说明功效说明功效说明功效说 功效说明功效说明功效说明明
+        </view>
+      </view>
+      <view>
+        <text class="price_div1">¥36.00</text>
+        <text class="price_div2">¥40.00</text>
+      </view>
+      <view>已卖出162件</view>
+    </view>
+  </view>
 </view>

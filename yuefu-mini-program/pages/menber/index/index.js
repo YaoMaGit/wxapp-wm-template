@@ -19,6 +19,11 @@ goods_list:[1,2,3,4,5],
       url: '../address/address'
     })
   },
+	open_singinpage:	function(){
+		wx.navigateTo({
+			url: '../singinpage/singinpage'
+		})
+	},
 	open_oftengoods:
 	function(){
 		wx.navigateTo({
@@ -45,6 +50,11 @@ goods_list:[1,2,3,4,5],
       url: '../becamefx/becamefx'
     })
   },
+	open_question:function(){
+		wx.navigateTo({
+			url: '../question/question'
+		})
+	},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,0 +1,33 @@
+<view class="box">
+  <view class="left_div" bindtap='tabclk1'>
+    <view class="{{tab==1 ? 'tab active' : 'tab'}}">佣金</view>
+  </view>
+  <view class="right_div" bindtap='tabclk2'>
+    <view class="{{tab==2 ? 'tab active' : 'tab'}}">提现</view>
+  </view>
+</view>
+<view class='title_class'>
+    共41条数据，共计佣金330.00元
+</view>
+<view class="log-box">
+  <block wx:for="{{goods_list}}" wx:key="index">
+    <view class="log-item">
+      <view>
+        <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1334150707,3945418203&fm=27&gp=0.jpg"></image>
+      </view>
+      <view class="right">
+        <view class="top">
+          <view>昵称
+            <image  class="header_img"src="../../../assets/icon/vip111.png"></image>
+          </view>
+          <view>+200.00</view>
+        </view>
+        <view class="bottom">
+          <view>订单编号：201807010002</view>
+
+          <view>2018-11-20 15:43:30</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

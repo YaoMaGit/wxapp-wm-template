@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="msg">推广人数（3）</view>
+  <block wx:for="{{list}}" wx:key="index" >
+    <view class="item" bindtap="open_list">
+      <view>一级会员(3)</view>
+      <view>查看全部</view>
+    </view>
+  </block>
+</view>

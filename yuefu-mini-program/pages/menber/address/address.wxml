@@ -1,5 +1,5 @@
 <view>
-  <view>
+  <view class='box'>
 			<ul>
 				<li class="address_li">
 					<view class="address_name">

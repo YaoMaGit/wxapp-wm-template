@@ -37,11 +37,10 @@
 
 .address_new {
 	background: #5B91FE;
-	box-shadow: 0 1rpx 5rpx 1rpx #5B91FE;
 	border-radius: 100rpx;
 	text-align: center;
 	padding: 15rpx;
 	color: #fff;
-	font-size: 24rpx;
+	font-size: 28rpx;
 }
 

@@ -1,0 +1,18 @@
+.msg {
+  color: #598CF2;
+  font-size: 32rpx;
+  margin: 22rpx 0;
+  line-height: 1;
+  padding-left: 26rpx;
+}
+.item {
+  background: #fff;
+  height: 78rpx;
+  line-height: 78rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 26rpx;
+  font-size: 24rpx;
+  color: #030000;
+  border-bottom: 1px solid #f1f0f0;
+}

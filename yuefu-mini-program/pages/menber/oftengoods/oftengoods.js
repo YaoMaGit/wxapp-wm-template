@@ -5,9 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-goods_list:[1,2,3,4,5],
+    goods_list: [1, 2, 3],
+    goods_list2: [1, 2],
+    tab: 1,
   },
-
+  tabclk1: function () {
+    this.setData({
+      tab:1,
+      goods_list: [1, 2, 3],
+    })
+  },
+  tabclk2: function () {
+    this.setData({
+      tab: 2,
+      goods_list: [1, 2],
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

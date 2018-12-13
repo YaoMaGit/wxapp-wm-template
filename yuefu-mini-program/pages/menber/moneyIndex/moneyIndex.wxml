@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="box">
+    <image src="../../../assets/icon/icon-bg-3.png"></image>
+    <view class="info">
+      <view>账户余额(元)</view>
+      <view>0.00</view>
+      <navigator hover-class="none" url="../money/money">充值</navigator>
+    </view>
+  </view>
+</view>

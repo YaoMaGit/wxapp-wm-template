@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="info">
+    <view class="top">
+      <image src="../../../assets/icon/icon-add.png"></image>
+      <view>月府小主</view>
+    </view>
+    <view class="msg">
+      <view>亲爱的，快来帮我买个单</view>
+      <view>
+        <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,109 @@
+<view class="container">
+  <view class="banner-box">
+    <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+  </view>
+
+  <view class="pic-box">
+    <view class="title">
+      <view class="left">爆款单品</view>
+      <view class="right">
+        更多
+        <image src="../../../assets/icon/icon-arrow-down.png"></image>
+      </view>
+    </view>
+    <swiper class="pic-list" display-multiple-items="3">
+      <block wx:for="{{list}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+          <view class="info">
+            <view>美极焗基围虾（熟）</view>
+            <view class="price">
+              ¥ 32.00<text>¥ 40.00</text>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class="xihuan-box">
+    <view class="top">
+      <text class="line"></text>
+      <text class="left">猜你喜欢 · </text>
+      <text class="right">EXPLORE</text>
+      <text class="line"></text>
+    </view>
+    <view class="list">
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -5,6 +5,7 @@
 	font-weight: 700;
 	padding-top: 130rpx;
 	background: #ffffff;
+  padding-bottom: 10rpx;
 }
 
 .center_div {
@@ -42,7 +43,6 @@
 
 .address_new {
 	background: #5B91FE;
-	box-shadow: 0 1rpx 5rpx 1rpx #5B91FE;
 	border-radius: 100rpx;
 	text-align: center;
 	padding: 15rpx;

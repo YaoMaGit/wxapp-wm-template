@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="banner">
+    <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+  </view>
+  <view class="tilte">分享幸运 就这一杯 </view>
+  <view class="line"></view>
+  <view class="msg">给好友送免费黑糖暖宫姜枣茶，TA喝你也得 </view>
+  <view class="wx-box">
+    <image src="../../../assets/icon/icon-WeChat-2.png"></image>微信好友
+  </view>
+  <view class="bottom">
+    <text class="line"></text>
+    <text class="left">已获赠杯</text>
+    <text class="line"></text>
+  </view>
+  <view class="text">还没有获得奖励，快送好友喝免费黑糖姜茶</view>
+</view>

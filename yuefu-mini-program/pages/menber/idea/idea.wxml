@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="box">
+    <view class="title">描述问题</view>
+    <textarea placeholder="请填写描述问题，以使我们提供跟好的帮助，上限100字"></textarea>
+  </view>
+  <view class="box">
+    <view class="title">上传图片</view>
+    <view class="upload-box">
+      <view>请提供问题截图（选填）</view>
+      <view>
+        <view>+</view>
+      </view>
+    </view>
+  </view>
+  <view class="btn" bindtap="handleSave">提交</view>
+</view>

@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="panel-box">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="item" data-index="{{index}}" bindtap="openDetail">
+        <view class="title">
+          <view>{{item.type}}</view>
+          <view>{{item.title}}</view>
+          <view class="arrow-icon {{openActive === index ? 'open' : ''}}">
+            <image src="../../../assets/icon/icon-arrow-down.png"></image>
+          </view>
+        </view>
+        <view class="content" wx:if="{{openActive === index}}">
+          <view>超过配送时间商品还没有收到怎么办？</view>
+          <view>如何修改配送时间，地址，电话？</view>
+          <view>我的地址可以配送吗？</view>
+          <view>我现在下单，什么时候送达？</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="list">
+    <view>
+      <image src="../../../assets/icon/bg-5.png"></image>
+      <view>订单超时未配送怎么办？</view>
+    </view>
+    <view>
+      <image src="../../../assets/icon/bg-5.png"></image>
+      <view>订单超时未配送怎么办？</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="top">
+    <view>可提佣金</view>
+    <view>
+      <view>320.00</view>
+      <view bindtap='open_listincome'>
+        查看明细
+        <image src="../../../assets/icon/icon-arrow-right.png"></image>
+      </view>
+    </view>
+    <view>成功提现：00.00</view>
+  </view>
+
+  <view class="detail">
+    <view class="all">
+      <view class="left">
+        <view>累计佣金</view>
+        <view>320.00</view>
+      </view>
+      <view class="right">
+        <view>未结算佣金</view>
+        <view>0.00</view>
+      </view>
+    </view>
+    <view class="text">
+      <text>买家确认收货后，立即获得分销佣金，结算期（3天）后，佣金可提现。结算期内，买家退货佣金自动扣除</text>
+    </view>
+  </view>
+
+  <view class="wx-box">
+    <image src="../../../assets/icon/icon-WeChat.png"></image>微信
+    <view class="dian">
+      <view></view>
+    </view>
+  </view>
+
+  <view class="btn" bindtap="isShowOkPopup">我要提现</view>
+
+
+  <view class="ok-popup" wx:if="{{isShow}}" bindtap="isShowOkPopup">
+    <view class="info">
+      <image src="../../../assets/icon/icon-ok.png"></image>
+      <view>提现成功</view>
+    </view>
+  </view>
+</view>

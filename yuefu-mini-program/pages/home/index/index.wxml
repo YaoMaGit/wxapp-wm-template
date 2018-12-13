@@ -1,35 +1,485 @@
-<view class="box">
-	<view class="left_div">
-		<view class="tab active">商品</view>
-	</view>
+<view class="container">
+  <view class="search-box">
+    <view class="addr" bindtap='open_city_sel'>
+      <image src="../../../assets/icon/icon-addr-white.png"></image>
+      <text>深圳</text>
+    </view>
+    <view class="input-box" >
+      <image src="../../../assets/icon/icon-sousuo.png"></image>
+      <input bindfocus='open_search' placeholder="请输入商品名称或商品关键字"></input>
+    </view>
+  </view>
 
-	<view class="right_div">
-		
-		<view>猜你喜欢</view>
-	</view>
-</view>
+  <navigator hover-class="none" class="banner-box" url="../sushiIndex/sushiIndex">
+    <image src="{{imageBaseUrl}}/assets/banner/banner-1.png"></image>
+  </navigator>
 
+  <view class="type-box">
+    <view class="item">
+      <image src="../../../assets/icon/icon-type-1.png"></image>
+      <text>暖宫美颜</text>
+    </view>
+    <view class="item">
+      <image src="../../../assets/icon/icon-type-2.png"></image>
+      <text>桃胶美食</text>
+    </view>
+    <view class="item">
+      <image src="../../../assets/icon/icon-type-3.png"></image>
+      <text>减脂瘦身</text>
+    </view>
+    <view class="item">
+      <image src="../../../assets/icon/icon-type-4.png"></image>
+      <text>备孕必吃</text>
+    </view>
+    <view class="item">
+      <image src="../../../assets/icon/icon-type-5.png"></image>
+      <text>送TA</text>
+    </view>
+  </view>
 
+  <navigator hover-class="none" class="toutiao-box" url="../headlines/headlines">
+    <view class="left">
+      <image src="../../../assets/icon/icon-touxiao.png"></image>
+    </view>
+    <view class="center">
+      <text>双11，全场菜品九折优惠</text>
+    </view>
+    <view class="right">
+      <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+    </view>
+  </navigator>
 
-<view class="ylike_list">
-	<view class="goods_item" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
-		<view class="goods_left">
-			<view>
-				<image src="../../../assets/image/invite.png"></image>
-			</view>
-		</view>
-		<view class="goods_right">
-			<view class="title_div">[2罐包邮]阿胶乌鸡汤+花胶老母鸡汤</view>
-			<view class="subtitle_div">
-				<view class="subtitle_div1">功效说明：</view>
-				<view class="subtitle_div2">
-					功效说明功效说明功效说明功效说明功效说 功效说明功效说明功效说明明
-				</view>
-			</view>
-			<view><text class="price_div1">¥36.00</text><text class="price_div2">¥40.00</text></view>
-			<view >已卖出162件 
-			
-			<image class="add_img" src="../../../assets/image/客服/组8@3x.png"></image></view>
-		</view>
-	</view>
+  <view class="jiri-box">
+    <view class="top">
+      <text>"</text>
+      <text>今天吃什么</text>
+      <text>领鲜品牌</text>
+    </view>
+    <view class="info">
+      <view class="item big" bindtap="isShowDetail">
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        <view class="name">名字名字名…</view>
+        <view class="price">￥8.80</view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        <view class="name">名字名字名…</view>
+        <view class="price">￥8.80</view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        <view class="name">名字名字名…</view>
+        <view class="price">￥8.80</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="banjia-box">
+    <view class="left item">
+      <view class="info">
+        <view>超划算</view>
+        <view>距活动结束</view>
+        <view>
+          <view>09</view>：
+          <view>06</view>：
+          <view>15</view>
+        </view>
+        <view class="price">
+          <view>柠檬烤鸡</view>
+          <view>
+            <text class="text-1">￥</text>
+            <text class="text-2">14.9</text>
+          </view>
+          <view>/支</view>
+        </view>
+      </view>
+      <image src="{{imageBaseUrl}}/assets/image/pageImages/food-1.png"></image>
+    </view>
+    <view class="right item">
+      <view>
+        <view class="info">
+          <view>超划算</view>
+          <view>第二份半价</view>
+          <view>GO ></view>
+        </view>
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-2.png"></image>
+      </view>
+      <view>
+        <view class="info">
+          <view>超划算</view>
+          <view>第二份半价</view>
+          <view>GO ></view>
+        </view>
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-3.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="good-box">
+    <view class="banner">
+      <image src="{{imageBaseUrl}}/assets/banner/banner-2.png"></image>
+    </view>
+    <view class="list">
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="good-box">
+    <view class="banner">
+      <image src="{{imageBaseUrl}}/assets/banner/banner-3.png"></image>
+    </view>
+    <view class="list">
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="good-box">
+    <view class="banner">
+      <image src="{{imageBaseUrl}}/assets/banner/banner-4.png"></image>
+    </view>
+    <view class="list">
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="good-box">
+    <view class="banner">
+      <image src="{{imageBaseUrl}}/assets/banner/banner-5.png"></image>
+    </view>
+    <view class="list">
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="pic">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="name">【2018产品】产…</view>
+        <view class="price">
+          <view><text>¥78.00</text> <text style="color: #A4A4A4;">/ 份</text></view>
+          <view>
+            <image src="../../../assets/icon/icon-card-blue.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="xihuan-box">
+    <view class="top">
+      <text class="line"></text>
+      <text class="left">猜你喜欢 · </text>
+      <text class="right">EXPLORE</text>
+      <text class="line"></text>
+    </view>
+    <view class="list">
+      <view class="item" bindtap="isShowDetail">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+      <view class="item" bindtap="isShowDetail">
+        <view class="left">
+          <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        </view>
+        <view class="right">
+          <view class="title">月子催奶-鲫鱼萝卜丝汤</view>
+          <view class="info">
+            <text>功效说明：功效说明功效说明功效说明功效说明功效说功效说明功效说明功效说明明</text>
+          </view>
+          <view class="price">
+            <text>¥ 32.00</text>
+            <text>¥ 40.00</text>
+          </view>
+          <view class="count">已卖出162件</view>
+          <image class="icon-dowm" src="../../../assets/icon/icon-arrow-down.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn-box">
+    <view>
+      <image src="../../../assets/icon/icon-wx.png"></image>
+    </view>
+    <view bindtap="goTop">
+      <image src="../../../assets/icon/icon-go-top.png"></image>
+    </view>
+  </view>
+
+  <view class="coupons-popup popup" bindtap="closePopup" wx:if="{{isShow}}">
+    <image class="pic" src="../../../assets/icon/icon-coupons.png"></image>
+  </view>
+
+  <view class="good-detail popup" wx:if="{{isShowDetail}}" bindtap="isShowDetail">
+    <image class="close-btn" src="../../../assets/icon/icon-close-gary-3.png" bindtap="isShowDetail"></image>
+    <view class="good-info" catchtap="catchtap">
+      <view class="info-box">
+        <image class="pic" src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
+        <view class="title">
+          <view class="left">黑糖红糖姜茶</view>
+          <view class="right">
+            <image src="../../../assets/icon/icon-stars-active.png"></image>
+            收藏菜品
+          </view>
+        </view>
+        <view class="msg">
+          <text>纯天然无污染；纯手工营养好；看得见的原料；喝得出的健康。</text>
+        </view>
+        <view class="price"><text>¥ 16.00</text>/ 份</view>
+      </view>
+
+      <view class="select-box">
+        <view class="title">包装:</view>
+        <view class="select">
+          <view wx:for="{{packList}}" wx:key="{{index}}" wx:for-item="item" class="row">
+            <view
+              wx:for="{{item}}"
+              wx:key="{{idx.id}}"
+              wx:for-item="idx"
+              class="col {{ idx.id === packActive ? 'active' : ''}}"
+              data-index="{{idx.id}}"
+              bindtap="switchPack"
+            >
+              {{idx.name}}
+            </view>
+          </view>
+        </view>
+        <view class="title">口味:</view>
+        <view class="select">
+          <view wx:for="{{ruleList}}" wx:key="{{index}}" wx:for-item="item" class="row">
+            <view
+              wx:for="{{item}}"
+              wx:key="{{idx.id}}"
+              wx:for-item="idx"
+              class="col {{ idx.id === ruleActive ? 'active' : ''}}"
+              data-index="{{idx.id}}"
+              bindtap="switchRule"
+            >
+              {{idx.name}}
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="tips-box">
+        <view class="title">功能介绍：</view>
+        <view>
+          <text>驱寒除湿、健脾养胃、活血暖宫、美容养颜,  驱寒除湿、健脾养胃、活血暖宫、美容养颜 </text>
+        </view>
+      </view>
+
+      <view class="comment-box">
+        <view class="title">菜品评价(153)</view>
+        <view class="list">
+          <view class="item">
+            <view class="left">
+              <image src="../../../assets/icon/kefu.png"></image>
+            </view>
+            <view class="right">
+              <view>
+                <view>Alice</view>
+                <view class="date">2018.11.12</view>
+              </view>
+              <view>
+                <image src="../../../assets/icon/icon-zan-active.png"></image>
+                <view>好评</view>
+              </view>
+              <view>
+                <text>好喝又划算，下次还会来的，服务好，口感好，经常有优惠活动哦........</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="more-btn">查看更多评价</view>
+      </view>
+
+      <view class="add-cart">
+        <view>
+          ￥<text>16</text>
+        </view>
+        <view>(黑糖红糖姜茶+分装 (推荐)，经典（标…)</view>
+        <view>
+          <image src="../../../assets/icon/icon-add.png"></image>
+          <view>加入购物车</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
 </view>

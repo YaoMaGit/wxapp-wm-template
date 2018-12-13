@@ -1,11 +1,14 @@
+.box{
+  margin-top: 15rpx;
+}
 .address_li{
 				width: 100%;
-        margin-top: 10px;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
         background: #fff;
-        padding:15rpx; 
+        padding:10rpx 20rpx;
+         
 			}
 			.address_name{
 				width: 15%;
@@ -25,6 +28,9 @@
 				float: left;
 				padding-right:3px;
 			}
+      .address_cont>view{
+        padding: 8rpx 0;
+      }
 			.address_a{
 				font-size: 28rpx;
 			}
@@ -65,7 +71,6 @@
 			}
 			.address_new{
 				background: #5B91FE;
-				box-shadow:0 1px 5px 1px #5B91FE;
 				border-radius: 100px;
 				text-align: center;
 				padding: 10px ;

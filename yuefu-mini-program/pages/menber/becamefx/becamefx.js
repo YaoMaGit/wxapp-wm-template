@@ -5,9 +5,17 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-		goods_list: [1, 2, 3, 4, ]
+		goods_list: [1, 2, 3, 4, ],
+    showModal_1:true,
 	},
-
+  /**
+   * 隐藏模态对话框
+   */
+  hideModal: function () {
+    this.setData({
+      showModal_1: false,
+    });
+  },
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
