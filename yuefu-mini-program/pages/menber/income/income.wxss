@@ -27,10 +27,13 @@
 .top>view:nth-child(2)>view:nth-child(2) {
   color: #333333;
   font-size: 24rpx;
+  display: flex;
+  align-items: center;
 }
 .top>view:nth-child(2) image {
   width: 26rpx;
   height: 26rpx;
+  margin-left: 8rpx;
 }
 .top>view:nth-child(3) {
   margin-top: 14rpx;
@@ -85,6 +88,7 @@
   width: 68rpx;
   height: 68rpx;
   margin-right: 12rpx;
+  margin-left: 32rpx;
 }
 .dian {
   width: 12rpx;
@@ -133,7 +137,7 @@
   border-radius: 10rpx;
 }
 .ok-popup .info image {
-  width: 156rpx;
+  width: 180rpx;
   height: 136rpx;
   margin: 26rpx auto 18rpx;
 }

@@ -11,7 +11,7 @@
   <view class="goods_item" wx:for="{{goods_list}}" wx:for-item="item" wx:key="index" wx:for-index="index">
     <view class="goods_left">
       <view>
-        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544459300155&di=ebcef6e1a0d58be77ad662f255782664&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D2b1093f95ee736d14c1e844bf33925b7%2F2e2eb9389b504fc2467c6d20efdde71190ef6df0.jpg"></image>
+        <image src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>
       </view>
     </view>
     <view class="goods_right">

@@ -150,7 +150,7 @@
 
 }
 .row_goods_div>view{
-	padding: 15rpx 15rpx;
+	padding: 35rpx 30rpx;
 }
 .goods_img{
 	width: 100%;
@@ -170,12 +170,15 @@
 }
 .carimg_div>view{
 	border-radius: 50%;
-	padding: 7rpx;
+	padding-right: 2rpx;
 	background: #6497FF;
 }
 .car_img{
-	width: 32rpx;
-	/* height: 32rpx; */
+	width: 38rpx;
+	height: 35rpx;
+  border-radius: 50%;
+  margin-top: 3rpx;
+  margin-left: 3rpx;
 }
 .price_div_text1{
 	color: #FF5052;

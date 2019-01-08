@@ -1,10 +1,13 @@
 // pages/menber/oftengoods/oftengoods.js
+var app = getApp();
+var imageBaseUrl = app.globalData.imageBaseUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imageBaseUrl,
     goods_list: [1, 2, 3],
     goods_list2: [1, 2],
     tab: 1,

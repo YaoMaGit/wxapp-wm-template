@@ -72,8 +72,7 @@ page {
 .padd_top {
   display: inline-block;
   /* margin-top: 8rpx; */
-  line-height: 54rpx;
-  height: 50rpx;
+  line-height: 40rpx;
 }
 
 .touying_div image {
@@ -82,8 +81,8 @@ page {
 }
 
 .card_top_right_top>.singin_img {
-  width: 54rpx;
-  height: 54rpx;
+  width: 40rpx;
+  height: 40rpx;
   vertical-align: middle;
   margin-right: 13rpx;
   
@@ -102,8 +101,14 @@ page {
   flex: 1;
   text-align: center;
 }
+.card_top_center_top{
+  font-size: 30rpx;
+  font-weight: 500;
+}
 .card_top_center_bottom{
-  padding-top: 10rpx;
+  padding-top: 5rpx;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22rpx;
 }
 .card_top_right_bottom{
   padding-top: 10rpx;
@@ -247,7 +252,7 @@ page {
 }
 
 .goods_right {
-  border-bottom: 1px solid rgba(216, 216, 216, 1);
+  border-bottom: 1px solid #EEEEEE;
   padding-bottom: 15rpx;
 }
 
@@ -263,13 +268,13 @@ page {
 
 .price_div1 {
   color: #ff1c00;
-  font-size: 30rpx;
+  font-size: 32rpx;
   padding-right: 10rpx;
 }
 
 .price_div2 {
   color: #c9c9c9;
-  font-size: 26rpx;
+  font-size: 22rpx;
   text-decoration: line-through;
 }
 

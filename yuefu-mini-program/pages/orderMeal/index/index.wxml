@@ -5,7 +5,7 @@
       <text>深圳</text>
     </view>
     <view class="input-box">
-      <image src="../../../assets/icon/icon-sousuo.png"></image>
+      <image src="../../../assets/icon/icon-sousuo-blue.png"></image>
       <input placeholder="请输入商品名称或商品关键字"></input>
     </view>
   </view>
@@ -67,22 +67,23 @@
 
   <view class="popup-box" wx:if="{{isShow}}" bindtap="switchModel">
     <view class="info" catchtap="catchtap">
+      <image src="../../../assets/icon/icon-close-gary-4.png" class="closeBtn" bindtap="switchModel"></image>
       <view class="title">霸气红糖姜茶</view>
       <view class="center">
         <view class="list-box">
           <view class="top">包装:</view>
           <view class="list">
-            <view class="active">分装 (推荐)</view>
-            <view>现喝</view>
+            <view wx:for="{{packList}}" wx:key="index" data-index="{{index}}" bindtap="switchPack" class="{{index === packActive ? 'active' : ''}}">
+              {{item}}
+            </view>
           </view>
         </view>
         <view class="list-box">
           <view class="top">口味:</view>
           <view class="list">
-            <view class="active">经典 (标准糖)</view>
-            <view>经典 (少糖)</view>
-            <view>无姜 (标准糖)</view>
-            <view>无姜 (少糖)</view>
+            <view wx:for="{{tasteList}}" wx:key="index" data-index="{{index}}" bindtap="switchTaste" class="{{index === tasteActive ? 'active' : ''}}">
+              {{item}}
+            </view>
           </view>
         </view>
       </view>
@@ -93,7 +94,7 @@
           </view>
           <view>(分装 (推荐)，经典（标…)</view>
         </view>
-        <view class="right">
+        <view class="right" bindtap="handleAddCart">
           <text>+</text>加入购物车
         </view>
       </view>
@@ -123,8 +124,8 @@
 					
 				</view>
 				<view class="right_detail">
-        <view>
-        <text>+</text>加入购物车
+        <view class='xxxxx' bindtap="handleAddCart">
+        <image src='../../../assets/icon/add_car.png'></image>  加入购物车
         </view>
 					
 				</view>

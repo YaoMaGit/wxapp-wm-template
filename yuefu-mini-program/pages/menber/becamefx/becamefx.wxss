@@ -6,9 +6,11 @@
 	display: flex;
 	color: #444444;
 	font-size: 28rpx;
-	margin-top: 50rpx;
+	margin-top: 40rpx;
 }
-
+.xxx{
+  margin-top: 20rpx;
+}
 .item_left {
 	flex: 2;
 display: flex;
@@ -56,8 +58,8 @@ justify-content: flex-end;
 }
 
 .modal-input>image {
-  width: 152rpx;
-  height: 135rpx;
+  width: 175rpx;
+  height: 155rpx;
 }
 
 .modal-footer {

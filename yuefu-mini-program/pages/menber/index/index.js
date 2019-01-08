@@ -1,10 +1,13 @@
 // pages/wode/index/index.js
+var app = getApp();
+var imageBaseUrl = app.globalData.imageBaseUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imageBaseUrl,
 goods_list:[1,2,3,4,5],
   },
 

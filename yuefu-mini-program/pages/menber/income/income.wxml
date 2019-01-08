@@ -4,7 +4,7 @@
     <view>
       <view>320.00</view>
       <view bindtap='open_listincome'>
-        查看明细
+        <text>查看明细</text>
         <image src="../../../assets/icon/icon-arrow-right.png"></image>
       </view>
     </view>

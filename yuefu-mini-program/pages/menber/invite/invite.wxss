@@ -20,4 +20,5 @@ image{
   text-align: center;
   line-height: 68rpx;
   margin: auto;
+   margin-top:250rpx;
 }

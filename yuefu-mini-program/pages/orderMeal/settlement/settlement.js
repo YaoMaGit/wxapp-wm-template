@@ -91,9 +91,9 @@ Page({
   },
   // 显示/隐藏赠品弹窗
   isShowGiftsPopup: function () {
-    this.setData({
-      isShowGifts: !this.data.isShowGifts,
-    })
+    // this.setData({
+    //   isShowGifts: !this.data.isShowGifts,
+    // })
   },
   // 切换支付方式
   swtchPay: function (e) {

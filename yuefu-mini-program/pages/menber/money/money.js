@@ -30,6 +30,9 @@ Page({
     this.setData({
       activeMoneyIndex,
     })
+    if (activeMoneyIndex === 3) {
+      this.open_getpay();
+    }
   },
   open_getpay:function(){
     wx.navigateTo({

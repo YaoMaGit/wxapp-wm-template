@@ -5,7 +5,7 @@
       <text>深圳</text>
     </view>
     <view class="input-box" >
-      <image src="../../../assets/icon/icon-sousuo.png"></image>
+      <image src="../../../assets/icon/icon-sousuo-blue.png"></image>
       <input bindfocus='open_search' placeholder="请输入商品名称或商品关键字"></input>
     </view>
   </view>
@@ -387,7 +387,7 @@
   </view>
 
   <view class="good-detail popup" wx:if="{{isShowDetail}}" bindtap="isShowDetail">
-    <image class="close-btn" src="../../../assets/icon/icon-close-gary-3.png" bindtap="isShowDetail"></image>
+    <image class="close-btn" src="../../../assets/icon/icon-close-gary-3.png" bindtap="isShowDetail" catchtap="catchtap"></image>
     <view class="good-info" catchtap="catchtap">
       <view class="info-box">
         <image class="pic" src="{{imageBaseUrl}}/assets/image/pageImages/food-4.png"></image>

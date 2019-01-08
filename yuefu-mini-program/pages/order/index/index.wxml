@@ -12,7 +12,11 @@
         <text>2019-09-02  11:44</text>
       </view>
       <view class='list_top_right'>
-        <text>等待支付</text>
+        <text  wx:if="{{active == 0}}">待评价</text>    
+        <text wx:if="{{active == 1}}">待付款</text>
+        <text  wx:if="{{active == 2}}">待发货</text>
+        <text  wx:if="{{active == 3}}">待收货</text>
+        <text  wx:if="{{active == 4}}">待评价</text>
       </view>
     </view>
 
@@ -20,7 +24,7 @@
     <view class='list_center'>
       <view class='list_center_left'>
         <view>
-          <image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=614163513,3938513931&fm=200&gp=0.jpg'></image>
+          <image src='{{imageBaseUrl}}/assets/image/pageImages/food-4.png'></image>
         </view>
       </view>
       <view class='list_center_center'>

@@ -10,7 +10,7 @@
     再购59.1元立享&#91满100元免配送费]
 
   </view>
-  <view class="top_right">
+  <view class="top_right" bindtap="goActivityPage">
     <text>查看活动</text>
     <image src='../../../assets/icon/icon-arrow-down.png'></image>
   </view>
@@ -24,7 +24,7 @@
   </view>
   <view class='image_div'>
     <view>
-      <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4207329235,4122598612&fm=200&gp=0.jpg'></image>
+      <image src='{{imageBaseUrl}}/assets/image/pageImages/food-4.png'></image>
     </view>
   </view>
   <view class='right_div'>
@@ -66,7 +66,7 @@
 <view class="row_list_div">
   <view class="row_goods_div" wx:for="{{goods_list}}">
     <view>
-      <image class="goods_img" src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4207329235,4122598612&fm=200&gp=0.jpg'></image>
+      <image class="goods_img" src='{{imageBaseUrl}}/assets/image/pageImages/food-4.png'></image>
     </view>
     <view class='title_div_like'>
       月子催奶-鲫鱼萝卜丝汤
@@ -78,7 +78,7 @@
       </view>
       <view class="carimg_div">
         <view>
-          <image class="car_img" src="../../../assets/icon/icon-card-witer.png"></image>
+          <image class="car_img" src="../../../assets/icon/icon-card-blue.png"></image>
         </view>
       </view>
     </view>

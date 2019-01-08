@@ -37,6 +37,7 @@
   width: 28rpx;
   height: 28rpx;
   margin-right: 12rpx;
+  margin-top: -3px;
 }
 .search-box .input-box input {
   flex: 1;
@@ -116,12 +117,16 @@
 }
 .jiri-box .top>text:nth-child(2) {
   color: #FFC122;
-  font-size: 22rpx;
+  font-size: 24rpx;
   font-weight: bold;
+  letter-spacing: 2rpx;
+  margin-left: 6rpx;
 }
 .jiri-box .top>text:nth-child(3) {
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: #777777;
+  letter-spacing: 2rpx;
+  margin-left: 8rpx;
 }
 .jiri-box .info {
   display: flex;
@@ -185,6 +190,8 @@
 .banjia-box .left .info>view:nth-child(1) {
   color: #FF7858;
   font-size: 26rpx;
+  font-weight: 900;
+  line-height: 1;
 }
 .banjia-box .left .info>view:nth-child(2) {
   font-size: 22rpx;
@@ -212,6 +219,7 @@
   text-align: center;
   font-size: 18rpx;
   padding-top: 24rpx;
+  margin-top: 30rpx;
 }
 .banjia-box .left .info .price>view {
   line-height: 1;
@@ -246,6 +254,7 @@
   color: #FFC122;
   font-size: 26rpx;
   line-height: 1;
+  font-weight: 900;
 }
 .banjia-box .right>view .info>view:nth-child(2) {
   color: #666666;
@@ -283,12 +292,12 @@
   width: 184rpx;
   height: 240rpx;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .good-box .list .pic image {
   width: 150rpx;
-  height: 162rpx;
+  height: 126rpx;
+  margin-top: 50rpx;
 }
 .good-box .list .name {
   color: #333333;
@@ -373,10 +382,11 @@
 }
 .xihuan-box .list .item .right .price text:nth-child(1) {
   color: #FF5151;
-  font-size: 24rpx;
+  font-size: 32rpx;
 }
 .xihuan-box .list .item .right .price text:nth-child(2) {
   margin-left: 20rpx;
+  font-size: 22rpx;
   text-decoration: line-through;
 }
 .xihuan-box .list .item .right .count {
@@ -396,6 +406,7 @@
   position: fixed;
   right: 20rpx;
   bottom: 210rpx;
+  z-index: 99;
 }
 .btn-box>view {
   width: 96rpx;
@@ -413,10 +424,10 @@
 }
 .coupons-popup .pic {
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 18rpx;
-  height: 100vh;
+  width: 97%;
+  top: 160rpx;
+  left: 24rpx;
+  height: 920rpx;
 }
 
 .good-info {

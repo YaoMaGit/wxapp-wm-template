@@ -45,7 +45,7 @@
 			</view>
 		</view>
 	</view>
-		<view class="list_div">
+		<view class="list_div .xxx">
 			<view class="item_left">
 				<view class="titel"></view>
 			</view>

@@ -19,7 +19,7 @@
     </block>
   </view>
 
-  <view class="list">
+  <!-- <view class="list">
     <view>
       <image src="../../../assets/icon/bg-5.png"></image>
       <view>订单超时未配送怎么办？</view>
@@ -28,5 +28,5 @@
       <image src="../../../assets/icon/bg-5.png"></image>
       <view>订单超时未配送怎么办？</view>
     </view>
-  </view>
+  </view> -->
 </view>

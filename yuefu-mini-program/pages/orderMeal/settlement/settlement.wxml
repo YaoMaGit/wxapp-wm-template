@@ -109,7 +109,7 @@
         </view>
         <view>-￥6</view>
       </view>
-      <navigator hover-class="none" url="../selectCoupon/selectCoupon" class="dikou">
+      <navigator hover-class="none" url="../../menber/couponsDetail/couponsDetail" class="dikou">
         <view>抵用券</view>
         <view>
           <view>暂无可用</view>

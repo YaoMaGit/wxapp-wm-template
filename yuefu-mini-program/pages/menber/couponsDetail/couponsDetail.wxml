@@ -5,7 +5,7 @@
       wx:key="{{index}}"
       data-index="{{index}}"
       class="item {{item.type === 0 ? '' : 'tongyong'}} {{item.status === 0 ? '' : 'overdue'}}"
-      bindtap="swichTab"
+      bindtap="goback"
     >
       <image wx:if="{{item.type === 0 && item.status === 0}}" src="../../../assets/icon/bg-1.png"></image>
       <image wx:elif="{{item.type === 1 && item.status === 0}}" src="../../../assets/icon/bg-3.png"></image>
@@ -21,7 +21,8 @@
           <view>{{item.typeText}}</view>
           <view>有效期至：2019年12月31日</view>
           <view>
-            <navigator hover-class="none" url="../giving/giving">赠送好友 ></navigator>
+            <!-- <navigator hover-class="none" url="../giving/giving">赠送好友 ></navigator> -->
+            <navigator hover-class="none">赠送好友 ></navigator>
           </view>
           <view class="overdue-pic" wx:if="{{item.status === 1 || item.status === 2}}">
             <image wx:if="{{item.status === 1}}" src="../../../assets/icon/icon-guoqi.png"></image>

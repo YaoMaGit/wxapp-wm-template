@@ -1,10 +1,13 @@
 // pages/order/index/index.js
+var app = getApp();
+var imageBaseUrl = app.globalData.imageBaseUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imageBaseUrl,
     active: 0,
     tabdata: ['全部', '待付款', '待发货', '待收货', '待评价'],
     goods_list: [1, 2],

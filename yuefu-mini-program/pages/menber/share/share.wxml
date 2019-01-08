@@ -5,9 +5,9 @@
   <view class="tilte">分享幸运 就这一杯 </view>
   <view class="line"></view>
   <view class="msg">给好友送免费黑糖暖宫姜枣茶，TA喝你也得 </view>
-  <view class="wx-box">
+  <button class="wx-box" open-type='share'>
     <image src="../../../assets/icon/icon-WeChat-2.png"></image>微信好友
-  </view>
+  </button>
   <view class="bottom">
     <text class="line"></text>
     <text class="left">已获赠杯</text>
