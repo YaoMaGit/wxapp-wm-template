@@ -504,7 +504,7 @@
 }
 .good-info .select-box .title {
   line-height: 1;
-  margin: 34rpx 0;
+  padding: 20rpx 0;
 }
 .good-info .select-box .select .row {
   display: flex;
@@ -597,11 +597,11 @@
 }
 .more-btn {
   width: 200rpx;
-  height: 40rpx;
-  line-height: 36rpx;
+  line-height: 1;
+  padding: 8rpx 0;
   text-align: center;
   border-radius: 20rpx;
-  border: 1rpx solid #BFBFBF;
+  border: 1px solid #BFBFBF;
   box-sizing: border-box;
   margin: 16rpx auto 0;
   color: #555555;

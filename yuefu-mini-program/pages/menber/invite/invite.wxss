@@ -22,3 +22,15 @@ image{
   margin: auto;
    margin-top:250rpx;
 }
+      .address{
+				width: 80%;
+				margin: 40px auto;
+			}
+			.address_new{
+				background: #5B91FE;
+				border-radius: 100px;
+				text-align: center;
+				padding:7px ;
+				color: #fff;
+				font-size: 14px;
+			}

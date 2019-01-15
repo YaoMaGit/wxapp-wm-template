@@ -12,8 +12,8 @@
 <text>推广流程</text>
 </view>
 
-<view  class='padding_css'>
-<view class='btn_div'>
+<view  class='address'>
+<view class='address_new'>
 <text>立即申请</text>
 </view>
 </view>

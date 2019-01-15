@@ -111,6 +111,7 @@
 	border: 1px solid #e8e8e8;
 	text-align: center;
 	padding: 5rpx;
+  padding-right: 4rpx;
 	/* border-radius-top-left: 8rpx;
   border-radius-right-bottom: 8rpx; */
 }
@@ -128,6 +129,7 @@
 	text-align: center;
 	color: #6497FF;
 	padding: 5rpx;
+  padding-right: 4rpx;
 	border: 1px solid #e8e8e8;
 }
 
@@ -169,13 +171,13 @@
 	display: flex;
 }
 .carimg_div>view{
-	border-radius: 50%;
+	/* border-radius: 50%;
 	padding-right: 2rpx;
-	background: #6497FF;
+	background: #6497FF; */
 }
 .car_img{
 	width: 38rpx;
-	height: 35rpx;
+	height: 38rpx;
   border-radius: 50%;
   margin-top: 3rpx;
   margin-left: 3rpx;

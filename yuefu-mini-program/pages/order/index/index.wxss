@@ -53,7 +53,7 @@
   padding: 20rpx 0;
   margin-top: 33rpx;
   border-top: 1rpx solid #e9e8e8;
-  border-bottom: 1rpx dashed #e9e8e8;
+  border-bottom: 1rpx dashed #d6d4d4;
 }
 
 .list_center>view {

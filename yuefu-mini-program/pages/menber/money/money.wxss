@@ -27,13 +27,13 @@
   margin-left: 50rpx;
 }
 .detail .info>view:nth-child(2)>.btn {
-  width: 164rpx;
-  height: 64rpx;
-  line-height: 64rpx;
+  width: 120rpx;
+  height: 44rpx;
+  line-height: 44rpx;
   text-align: center;
   color: #5B91FE;
-  font-size: 28rpx;
-  border-radius: 30rpx;
+  font-size: 22rpx;
+  border-radius: 22rpx;
   background: #fff;
   margin-right: 44rpx;
 }

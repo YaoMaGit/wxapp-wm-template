@@ -24,7 +24,7 @@
 }
 
 .date {
-	color: #444444;
+	color: #999999;
 	font-size: 21rpx;
 	margin-left: 20rpx;
   margin-top: 10rpx;

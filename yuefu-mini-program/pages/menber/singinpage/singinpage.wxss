@@ -39,6 +39,7 @@ page {
 	width: 30rpx;
 	height: 34rpx;
 	vertical-align: middle;
+  padding-bottom: 7rpx;
 }
 
 .weekdiv {
